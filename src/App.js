@@ -21,15 +21,6 @@ const AppStyles = styled.div`
     color: #704f56;
     font-weight: bold;
   }
-  nav {
-    width: 100%;
-    background: #39ae7f;
-    a {
-      color: white;
-      padding: 1rem;
-      display: inline-block;
-    }
-  }
   img {
     max-width: 100%;
   }
@@ -42,6 +33,16 @@ const AppStyles = styled.div`
   }
 `
 
+const Navbar = styled.nav`
+  width: 100%;
+  background: #39ae7f;
+  a {
+    color: white;
+    padding: 1rem;
+    display: inline-block;
+  }
+`
+
 const MainContent = styled.div`
   padding: 3% 5%;
 `
@@ -49,11 +50,11 @@ const MainContent = styled.div`
 const App = () => (
     <Router>
         <AppStyles>
-            <nav>
+            <Navbar>
                 <Link exact to="/">Home</Link>
                 <Link to="/about">About</Link>
                 <Link to="/blog">Blog</Link>
-            </nav>
+            </Navbar>
             <MainContent>
                 <Routes/>
             </MainContent>
