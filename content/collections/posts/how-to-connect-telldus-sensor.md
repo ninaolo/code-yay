@@ -9,7 +9,7 @@ Do you have a Telldus sensor and a Telldus account? Do you want to fetch informa
 
 Then read on! Teach you, I will.
 
-![cats](https://media.giphy.com/media/1QLhxpMVDeoy4/giphy.gif)
+![cats](https://media.giphy.com/media/Dea0leKapJzJC/giphy.gif)
 
 Perhaps you have visited the [Telldus API documentation](http://api.telldus.com/documentation/live) page. I'm sorry all Telldus people out there, but that documentation is awful.
 
