@@ -544,7 +544,7 @@ var MainContent = _styledComponents2.default.div(_templateObject4);
 var App = function App() {
   return _react2.default.createElement(
     _reactStatic.Router,
-    null,
+    { basename: process.env.PUBLIC_URL },
     _react2.default.createElement(
       AppStyles,
       null,
@@ -1464,4 +1464,4 @@ module.exports = require("hoist-non-react-statics");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.5cebb950.js.map
+//# sourceMappingURL=static.564f8414.js.map
