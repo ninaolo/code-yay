@@ -541,12 +541,10 @@ var Navbar = _styledComponents2.default.nav(_templateObject3);
 
 var MainContent = _styledComponents2.default.div(_templateObject4);
 
-console.log(process.env.PUBLIC_URL);
-
 var App = function App() {
   return _react2.default.createElement(
     _reactStatic.Router,
-    { basename: process.env.PUBLIC_URL },
+    { basePath: process.env.PUBLIC_URL },
     _react2.default.createElement(
       AppStyles,
       null,
@@ -1466,4 +1464,4 @@ module.exports = require("hoist-non-react-statics");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.30d25b91.js.map
+//# sourceMappingURL=static.07f6893a.js.map
