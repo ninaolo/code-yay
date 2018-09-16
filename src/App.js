@@ -30,9 +30,6 @@ const AppStyles = styled.div`
       display: inline-block;
     }
   }
-  .content {
-    padding: 1rem;
-  }
   img {
     max-width: 100%;
   }
@@ -45,6 +42,10 @@ const AppStyles = styled.div`
   }
 `
 
+const MainContent = styled.div`
+  padding: 1rem;
+`
+
 const App = () => (
     <Router>
         <AppStyles>
@@ -53,9 +54,9 @@ const App = () => (
                 <Link to="/about">About</Link>
                 <Link to="/blog">Blog</Link>
             </nav>
-            <div className="content">
+            <MainContent>
                 <Routes/>
-            </div>
+            </MainContent>
         </AppStyles>
     </Router>
 )
