@@ -2,17 +2,20 @@
   "name": "react-static-example-basic",
   "version": "1.0.1",
   "main": "index.js",
+  "homepage": "https://ninaolo.github.io/code-yay",
   "license": "MIT",
   "scripts": {
     "start": "react-static start",
     "stage": "react-static build --staging",
     "build": "react-static build",
-    "serve": "serve dist -p 3000"
+    "serve": "serve dist -p 3000",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "chokidar": "2.0.3",
     "htmr": "0.6.3",
-    "jdown": "^0.3.0",
+    "jdown": "^0.6.4",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-hot-loader": "^4.0.0-beta.21",
@@ -23,6 +26,7 @@
   "devDependencies": {
     "babel-plugin-styled-components": "^1.7.1",
     "eslint-config-react-tools": "1.x.x",
+    "gh-pages": "^2.0.0",
     "serve": "^6.1.0"
   }
 }
