@@ -2,7 +2,6 @@ import React from 'react'
 import {Router, Link} from 'react-static'
 import styled, {injectGlobal} from 'styled-components'
 import {hot} from 'react-hot-loader'
-//
 import Routes from 'react-static-routes'
 
 injectGlobal`
@@ -36,6 +35,13 @@ const AppStyles = styled.div`
   }
   img {
     max-width: 100%;
+  }
+  pre {
+    background: #f4f4f4;
+    padding: .8em;
+    overflow: auto;
+    border-radius: 7px;
+    margin: 35px 0;
   }
 `
 
