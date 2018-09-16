@@ -43,7 +43,7 @@ const AppStyles = styled.div`
 `
 
 const MainContent = styled.div`
-  padding: 1rem;
+  padding: 3% 5%;
 `
 
 const App = () => (
