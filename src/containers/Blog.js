@@ -13,7 +13,9 @@ export default withRouteData(({posts}) => (
         <br/>
         All Posts:
         <ul>
-            {posts.map(post => (
+            {posts.sort((a, b) => {
+                return new Date(b.date) - new Date(a.date);
+            }).map(post => (
                 <li key={post.slug}>
                     {prettyDate(post.date)}: <Link to={`/blog/post/${post.slug}/`}>{post.title}</Link>
                 </li>
