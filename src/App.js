@@ -36,7 +36,7 @@ const AppStyles = styled.div`
 const Navbar = styled.nav`
   width: 100%;
   background: #39ae7f;
-  a {
+  a, span {
     color: white;
     padding: 1rem;
     display: inline-block;
@@ -51,7 +51,8 @@ const App = () => (
     <Router>
         <AppStyles>
             <Navbar>
-                <Link exact to="/">Home</Link>
+                <Link exact to="/">code &bull; yay</Link>
+                <span>|</span>
                 <Link to="/about">About</Link>
                 <Link to="/blog">Blog</Link>
             </Navbar>
