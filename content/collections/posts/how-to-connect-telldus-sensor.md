@@ -1,6 +1,6 @@
 ---
 title: How to fetch information from your Telldus sensor with NodeJS via Telldus Live API
-date: "2017-12-17T20:11:00.000Z"
+date: "2018-09-17T15:00:00.000Z"
 slug: how-to-connect-telldus-sensor
 ---
 
