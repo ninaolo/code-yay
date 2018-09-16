@@ -1,3 +1,4 @@
+import React from 'react'
 import {reloadRoutes} from 'react-static/node'
 import jdown from 'jdown'
 import chokidar from 'chokidar'
@@ -52,7 +53,7 @@ export default {
         meta.styleTags = sheet.getStyleElement()
         return html
     },
-    Document: class CustomHtml extends Component {
+    Document: class CustomHtml extends React.Component {
         render() {
             const {
                 Html, Head, Body, children, renderMeta,
