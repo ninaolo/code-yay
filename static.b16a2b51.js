@@ -567,7 +567,7 @@ var App = function App() {
         ),
         _react2.default.createElement(
           _reactStatic.Link,
-          { to: '/blog' },
+          { to: '/code-yay/blog' },
           'Blog'
         )
       ),
@@ -1463,4 +1463,4 @@ module.exports = require("hoist-non-react-statics");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.411dd4da.js.map
+//# sourceMappingURL=static.b16a2b51.js.map
