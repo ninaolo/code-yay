@@ -9,7 +9,7 @@ Hello!
 
 Having problems deploying your `react-static` app to Github pages? In this blog post I'll show you a basic boilerplate 
 example. The code for this blog post can be found 
-here: [https://github.com/ninaolo/react-static-github-pages-example]().
+here: [https://github.com/ninaolo/react-static-github-pages-example](https://github.com/ninaolo/react-static-github-pages-example).
 
 ### Step 1: Set up template app
 Go to [https://github.com/nozzle/react-static]() and follow the instructions on how to set up a basic app from one of 
