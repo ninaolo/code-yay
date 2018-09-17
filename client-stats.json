@@ -2,17 +2,17 @@
   "errors": [],
   "warnings": [],
   "version": "3.12.0",
-  "hash": "01d27dfc3b8e4d23a413",
-  "time": 4197,
-  "publicPath": "/",
+  "hash": "1c834ed1325972a05d56",
+  "time": 4077,
+  "publicPath": "https://ninaolo.github.io/",
   "assetsByChunkName": {
     "src/containers/Post": "templates/src/containers/Post.d89098ce.js",
     "src/containers/Home": "templates/src/containers/Home.07c2ea12.js",
     "src/containers/About": "templates/src/containers/About.82ad6b84.js",
     "src/containers/Blog": "templates/src/containers/Blog.40f1a898.js",
     "src/containers/404": "templates/src/containers/404.78fd131c.js",
-    "main": "main.cd94c4ac.js",
-    "bootstrap": "bootstrap.82d01759.js"
+    "main": "main.44c0612b.js",
+    "bootstrap": "bootstrap.564bec4a.js"
   },
   "assets": [
     {
@@ -71,8 +71,8 @@
       "emitted": true
     },
     {
-      "name": "main.cd94c4ac.js",
-      "size": 311343,
+      "name": "main.44c0612b.js",
+      "size": 311459,
       "chunks": [
         5
       ],
@@ -83,8 +83,8 @@
       "isOverSizeLimit": true
     },
     {
-      "name": "bootstrap.82d01759.js",
-      "size": 1570,
+      "name": "bootstrap.564bec4a.js",
+      "size": 1595,
       "chunks": [
         6
       ],
@@ -102,8 +102,8 @@
         5
       ],
       "assets": [
-        "bootstrap.82d01759.js",
-        "main.cd94c4ac.js"
+        "bootstrap.564bec4a.js",
+        "main.44c0612b.js"
       ],
       "isOverSizeLimit": true
     }
@@ -684,14 +684,14 @@
       "initial": true,
       "entry": false,
       "extraAsync": false,
-      "size": 647343,
+      "size": 647334,
       "names": [
         "main"
       ],
       "files": [
-        "main.cd94c4ac.js"
+        "main.44c0612b.js"
       ],
-      "hash": "cd94c4acaf736d366104",
+      "hash": "44c0612bc9107fa3c4d8",
       "parents": [
         6
       ],
@@ -1619,9 +1619,9 @@
             5
           ],
           "assets": [],
-          "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/BrowserRouter.js",
-          "issuerId": 62,
-          "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
+          "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/HashRouter.js",
+          "issuerId": 68,
+          "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -2123,9 +2123,9 @@
             5
           ],
           "assets": [],
-          "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/BrowserRouter.js",
-          "issuerId": 62,
-          "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
+          "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/HashRouter.js",
+          "issuerId": 68,
+          "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -4694,7 +4694,7 @@
           "name": "./src/App.js",
           "index": 8,
           "index2": 143,
-          "size": 3483,
+          "size": 3474,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -4724,7 +4724,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 1,
-          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  body {\\n    font-family: \\'HelveticaNeue-Light\\', \\'Helvetica Neue Light\\', \\'Helvetica Neue\\', Helvetica, Arial,\\n      \\'Lucida Grande\\', sans-serif;\\n    font-weight: 300;\\n    font-size: 16px;\\n    margin: 0;\\n    padding: 0;\\n  }\\n'], ['\\n  body {\\n    font-family: \\'HelveticaNeue-Light\\', \\'Helvetica Neue Light\\', \\'Helvetica Neue\\', Helvetica, Arial,\\n      \\'Lucida Grande\\', sans-serif;\\n    font-weight: 300;\\n    font-size: 16px;\\n    margin: 0;\\n    padding: 0;\\n  }\\n']),\n    _templateObject2 = _taggedTemplateLiteral(['\\n  a {\\n    text-decoration: none;\\n    color: #704f56;\\n    font-weight: bold;\\n  }\\n  img {\\n    max-width: 100%;\\n  }\\n  pre {\\n    background: #f4f4f4;\\n    padding: .8em;\\n    overflow: auto;\\n    border-radius: 7px;\\n    margin: 35px 0;\\n  }\\n'], ['\\n  a {\\n    text-decoration: none;\\n    color: #704f56;\\n    font-weight: bold;\\n  }\\n  img {\\n    max-width: 100%;\\n  }\\n  pre {\\n    background: #f4f4f4;\\n    padding: .8em;\\n    overflow: auto;\\n    border-radius: 7px;\\n    margin: 35px 0;\\n  }\\n']),\n    _templateObject3 = _taggedTemplateLiteral(['\\n  width: 100%;\\n  background: #39ae7f;\\n  a, span {\\n    color: white;\\n    padding: 1rem;\\n    display: inline-block;\\n  }\\n'], ['\\n  width: 100%;\\n  background: #39ae7f;\\n  a, span {\\n    color: white;\\n    padding: 1rem;\\n    display: inline-block;\\n  }\\n']),\n    _templateObject4 = _taggedTemplateLiteral(['\\n  padding: 3% 5%;\\n'], ['\\n  padding: 3% 5%;\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _reactHotLoader = require('react-hot-loader');\n\nvar _reactStaticRoutes = require('react-static-routes');\n\nvar _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\n(0, _styledComponents.injectGlobal)(_templateObject);\n\nvar AppStyles = _styledComponents2.default.div(_templateObject2);\n\nvar Navbar = _styledComponents2.default.nav(_templateObject3);\n\nvar MainContent = _styledComponents2.default.div(_templateObject4);\nvar App = function App() {\n  return _react2.default.createElement(\n    _reactStatic.Router,\n    null,\n    _react2.default.createElement(\n      AppStyles,\n      null,\n      _react2.default.createElement(\n        Navbar,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { exact: true, to: '/' },\n          'code \\u2022 yay'\n        ),\n        _react2.default.createElement(\n          'span',\n          null,\n          '|'\n        ),\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: '/about' },\n          'About'\n        ),\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: '/code-yay/blog' },\n          'Blog'\n        )\n      ),\n      _react2.default.createElement(\n        MainContent,\n        null,\n        _react2.default.createElement(_reactStaticRoutes2.default, null)\n      )\n    )\n  );\n};\n\nexports.default = (0, _reactHotLoader.hot)(module)(App);"
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  body {\\n    font-family: \\'HelveticaNeue-Light\\', \\'Helvetica Neue Light\\', \\'Helvetica Neue\\', Helvetica, Arial,\\n      \\'Lucida Grande\\', sans-serif;\\n    font-weight: 300;\\n    font-size: 16px;\\n    margin: 0;\\n    padding: 0;\\n  }\\n'], ['\\n  body {\\n    font-family: \\'HelveticaNeue-Light\\', \\'Helvetica Neue Light\\', \\'Helvetica Neue\\', Helvetica, Arial,\\n      \\'Lucida Grande\\', sans-serif;\\n    font-weight: 300;\\n    font-size: 16px;\\n    margin: 0;\\n    padding: 0;\\n  }\\n']),\n    _templateObject2 = _taggedTemplateLiteral(['\\n  a {\\n    text-decoration: none;\\n    color: #704f56;\\n    font-weight: bold;\\n  }\\n  img {\\n    max-width: 100%;\\n  }\\n  pre {\\n    background: #f4f4f4;\\n    padding: .8em;\\n    overflow: auto;\\n    border-radius: 7px;\\n    margin: 35px 0;\\n  }\\n'], ['\\n  a {\\n    text-decoration: none;\\n    color: #704f56;\\n    font-weight: bold;\\n  }\\n  img {\\n    max-width: 100%;\\n  }\\n  pre {\\n    background: #f4f4f4;\\n    padding: .8em;\\n    overflow: auto;\\n    border-radius: 7px;\\n    margin: 35px 0;\\n  }\\n']),\n    _templateObject3 = _taggedTemplateLiteral(['\\n  width: 100%;\\n  background: #39ae7f;\\n  a, span {\\n    color: white;\\n    padding: 1rem;\\n    display: inline-block;\\n  }\\n'], ['\\n  width: 100%;\\n  background: #39ae7f;\\n  a, span {\\n    color: white;\\n    padding: 1rem;\\n    display: inline-block;\\n  }\\n']),\n    _templateObject4 = _taggedTemplateLiteral(['\\n  padding: 3% 5%;\\n'], ['\\n  padding: 3% 5%;\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _reactHotLoader = require('react-hot-loader');\n\nvar _reactStaticRoutes = require('react-static-routes');\n\nvar _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\n(0, _styledComponents.injectGlobal)(_templateObject);\n\nvar AppStyles = _styledComponents2.default.div(_templateObject2);\n\nvar Navbar = _styledComponents2.default.nav(_templateObject3);\n\nvar MainContent = _styledComponents2.default.div(_templateObject4);\nvar App = function App() {\n  return _react2.default.createElement(\n    _reactStatic.Router,\n    null,\n    _react2.default.createElement(\n      AppStyles,\n      null,\n      _react2.default.createElement(\n        Navbar,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { exact: true, to: '/' },\n          'code \\u2022 yay'\n        ),\n        _react2.default.createElement(\n          'span',\n          null,\n          '|'\n        ),\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: '/about' },\n          'About'\n        ),\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: '/blog' },\n          'Blog'\n        )\n      ),\n      _react2.default.createElement(\n        MainContent,\n        null,\n        _react2.default.createElement(_reactStaticRoutes2.default, null)\n      )\n    )\n  );\n};\n\nexports.default = (0, _reactHotLoader.hot)(module)(App);"
         },
         {
           "id": 62,
@@ -7970,9 +7970,9 @@
         "bootstrap"
       ],
       "files": [
-        "bootstrap.82d01759.js"
+        "bootstrap.564bec4a.js"
       ],
-      "hash": "82d01759ec14b8f02c8b",
+      "hash": "564bec4a0f7c4f38da35",
       "parents": [],
       "modules": [],
       "filteredModules": 0,
@@ -8903,9 +8903,9 @@
         5
       ],
       "assets": [],
-      "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/BrowserRouter.js",
-      "issuerId": 62,
-      "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
+      "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/HashRouter.js",
+      "issuerId": 68,
+      "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -9407,9 +9407,9 @@
         5
       ],
       "assets": [],
-      "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/BrowserRouter.js",
-      "issuerId": 62,
-      "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
+      "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/HashRouter.js",
+      "issuerId": 68,
+      "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -12213,7 +12213,7 @@
       "name": "./src/App.js",
       "index": 8,
       "index2": 143,
-      "size": 3483,
+      "size": 3474,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -12243,7 +12243,7 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 1,
-      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  body {\\n    font-family: \\'HelveticaNeue-Light\\', \\'Helvetica Neue Light\\', \\'Helvetica Neue\\', Helvetica, Arial,\\n      \\'Lucida Grande\\', sans-serif;\\n    font-weight: 300;\\n    font-size: 16px;\\n    margin: 0;\\n    padding: 0;\\n  }\\n'], ['\\n  body {\\n    font-family: \\'HelveticaNeue-Light\\', \\'Helvetica Neue Light\\', \\'Helvetica Neue\\', Helvetica, Arial,\\n      \\'Lucida Grande\\', sans-serif;\\n    font-weight: 300;\\n    font-size: 16px;\\n    margin: 0;\\n    padding: 0;\\n  }\\n']),\n    _templateObject2 = _taggedTemplateLiteral(['\\n  a {\\n    text-decoration: none;\\n    color: #704f56;\\n    font-weight: bold;\\n  }\\n  img {\\n    max-width: 100%;\\n  }\\n  pre {\\n    background: #f4f4f4;\\n    padding: .8em;\\n    overflow: auto;\\n    border-radius: 7px;\\n    margin: 35px 0;\\n  }\\n'], ['\\n  a {\\n    text-decoration: none;\\n    color: #704f56;\\n    font-weight: bold;\\n  }\\n  img {\\n    max-width: 100%;\\n  }\\n  pre {\\n    background: #f4f4f4;\\n    padding: .8em;\\n    overflow: auto;\\n    border-radius: 7px;\\n    margin: 35px 0;\\n  }\\n']),\n    _templateObject3 = _taggedTemplateLiteral(['\\n  width: 100%;\\n  background: #39ae7f;\\n  a, span {\\n    color: white;\\n    padding: 1rem;\\n    display: inline-block;\\n  }\\n'], ['\\n  width: 100%;\\n  background: #39ae7f;\\n  a, span {\\n    color: white;\\n    padding: 1rem;\\n    display: inline-block;\\n  }\\n']),\n    _templateObject4 = _taggedTemplateLiteral(['\\n  padding: 3% 5%;\\n'], ['\\n  padding: 3% 5%;\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _reactHotLoader = require('react-hot-loader');\n\nvar _reactStaticRoutes = require('react-static-routes');\n\nvar _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\n(0, _styledComponents.injectGlobal)(_templateObject);\n\nvar AppStyles = _styledComponents2.default.div(_templateObject2);\n\nvar Navbar = _styledComponents2.default.nav(_templateObject3);\n\nvar MainContent = _styledComponents2.default.div(_templateObject4);\nvar App = function App() {\n  return _react2.default.createElement(\n    _reactStatic.Router,\n    null,\n    _react2.default.createElement(\n      AppStyles,\n      null,\n      _react2.default.createElement(\n        Navbar,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { exact: true, to: '/' },\n          'code \\u2022 yay'\n        ),\n        _react2.default.createElement(\n          'span',\n          null,\n          '|'\n        ),\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: '/about' },\n          'About'\n        ),\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: '/code-yay/blog' },\n          'Blog'\n        )\n      ),\n      _react2.default.createElement(\n        MainContent,\n        null,\n        _react2.default.createElement(_reactStaticRoutes2.default, null)\n      )\n    )\n  );\n};\n\nexports.default = (0, _reactHotLoader.hot)(module)(App);"
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  body {\\n    font-family: \\'HelveticaNeue-Light\\', \\'Helvetica Neue Light\\', \\'Helvetica Neue\\', Helvetica, Arial,\\n      \\'Lucida Grande\\', sans-serif;\\n    font-weight: 300;\\n    font-size: 16px;\\n    margin: 0;\\n    padding: 0;\\n  }\\n'], ['\\n  body {\\n    font-family: \\'HelveticaNeue-Light\\', \\'Helvetica Neue Light\\', \\'Helvetica Neue\\', Helvetica, Arial,\\n      \\'Lucida Grande\\', sans-serif;\\n    font-weight: 300;\\n    font-size: 16px;\\n    margin: 0;\\n    padding: 0;\\n  }\\n']),\n    _templateObject2 = _taggedTemplateLiteral(['\\n  a {\\n    text-decoration: none;\\n    color: #704f56;\\n    font-weight: bold;\\n  }\\n  img {\\n    max-width: 100%;\\n  }\\n  pre {\\n    background: #f4f4f4;\\n    padding: .8em;\\n    overflow: auto;\\n    border-radius: 7px;\\n    margin: 35px 0;\\n  }\\n'], ['\\n  a {\\n    text-decoration: none;\\n    color: #704f56;\\n    font-weight: bold;\\n  }\\n  img {\\n    max-width: 100%;\\n  }\\n  pre {\\n    background: #f4f4f4;\\n    padding: .8em;\\n    overflow: auto;\\n    border-radius: 7px;\\n    margin: 35px 0;\\n  }\\n']),\n    _templateObject3 = _taggedTemplateLiteral(['\\n  width: 100%;\\n  background: #39ae7f;\\n  a, span {\\n    color: white;\\n    padding: 1rem;\\n    display: inline-block;\\n  }\\n'], ['\\n  width: 100%;\\n  background: #39ae7f;\\n  a, span {\\n    color: white;\\n    padding: 1rem;\\n    display: inline-block;\\n  }\\n']),\n    _templateObject4 = _taggedTemplateLiteral(['\\n  padding: 3% 5%;\\n'], ['\\n  padding: 3% 5%;\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _reactHotLoader = require('react-hot-loader');\n\nvar _reactStaticRoutes = require('react-static-routes');\n\nvar _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\n(0, _styledComponents.injectGlobal)(_templateObject);\n\nvar AppStyles = _styledComponents2.default.div(_templateObject2);\n\nvar Navbar = _styledComponents2.default.nav(_templateObject3);\n\nvar MainContent = _styledComponents2.default.div(_templateObject4);\nvar App = function App() {\n  return _react2.default.createElement(\n    _reactStatic.Router,\n    null,\n    _react2.default.createElement(\n      AppStyles,\n      null,\n      _react2.default.createElement(\n        Navbar,\n        null,\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { exact: true, to: '/' },\n          'code \\u2022 yay'\n        ),\n        _react2.default.createElement(\n          'span',\n          null,\n          '|'\n        ),\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: '/about' },\n          'About'\n        ),\n        _react2.default.createElement(\n          _reactStatic.Link,\n          { to: '/blog' },\n          'Blog'\n        )\n      ),\n      _react2.default.createElement(\n        MainContent,\n        null,\n        _react2.default.createElement(_reactStaticRoutes2.default, null)\n      )\n    )\n  );\n};\n\nexports.default = (0, _reactHotLoader.hot)(module)(App);"
     },
     {
       "id": 62,
