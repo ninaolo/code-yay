@@ -7,9 +7,13 @@ import {ServerStyleSheet} from 'styled-components'
 chokidar.watch('content').on('all', () => reloadRoutes())
 
 export default {
+    siteRoot: "https://ninaolo.github.io",
+    basePath: "code-yay",
+
     getSiteData: () => ({
         title: 'React Static',
     }),
+
     getRoutes: async () => {
         const {posts, home, about} = await jdown('content')
         return [
@@ -47,12 +51,14 @@ export default {
             },
         ]
     },
+
     renderToHtml: (render, Comp, meta) => {
         const sheet = new ServerStyleSheet()
         const html = render(sheet.collectStyles(<Comp/>))
         meta.styleTags = sheet.getStyleElement()
         return html
     },
+
     Document: class CustomHtml extends React.Component {
         render() {
             const {
