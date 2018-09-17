@@ -3,7 +3,7 @@
   "warnings": [],
   "version": "3.12.0",
   "hash": "01d27dfc3b8e4d23a413",
-  "time": 4271,
+  "time": 4197,
   "publicPath": "/",
   "assetsByChunkName": {
     "src/containers/Post": "templates/src/containers/Post.d89098ce.js",
