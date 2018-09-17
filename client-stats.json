@@ -2,17 +2,17 @@
   "errors": [],
   "warnings": [],
   "version": "3.12.0",
-  "hash": "1c834ed1325972a05d56",
-  "time": 4077,
-  "publicPath": "https://ninaolo.github.io/",
+  "hash": "8c7112820ab24ac72f1e",
+  "time": 4170,
+  "publicPath": "https://ninaolo.github.io/code-yay/",
   "assetsByChunkName": {
     "src/containers/Post": "templates/src/containers/Post.d89098ce.js",
     "src/containers/Home": "templates/src/containers/Home.07c2ea12.js",
     "src/containers/About": "templates/src/containers/About.82ad6b84.js",
     "src/containers/Blog": "templates/src/containers/Blog.40f1a898.js",
     "src/containers/404": "templates/src/containers/404.78fd131c.js",
-    "main": "main.44c0612b.js",
-    "bootstrap": "bootstrap.564bec4a.js"
+    "main": "main.560502bb.js",
+    "bootstrap": "bootstrap.ff7587ba.js"
   },
   "assets": [
     {
@@ -71,8 +71,8 @@
       "emitted": true
     },
     {
-      "name": "main.44c0612b.js",
-      "size": 311459,
+      "name": "main.560502bb.js",
+      "size": 311567,
       "chunks": [
         5
       ],
@@ -83,8 +83,8 @@
       "isOverSizeLimit": true
     },
     {
-      "name": "bootstrap.564bec4a.js",
-      "size": 1595,
+      "name": "bootstrap.ff7587ba.js",
+      "size": 1604,
       "chunks": [
         6
       ],
@@ -102,8 +102,8 @@
         5
       ],
       "assets": [
-        "bootstrap.564bec4a.js",
-        "main.44c0612b.js"
+        "bootstrap.ff7587ba.js",
+        "main.560502bb.js"
       ],
       "isOverSizeLimit": true
     }
@@ -689,9 +689,9 @@
         "main"
       ],
       "files": [
-        "main.44c0612b.js"
+        "main.560502bb.js"
       ],
-      "hash": "44c0612bc9107fa3c4d8",
+      "hash": "560502bb8cbc8eb303b6",
       "parents": [
         6
       ],
@@ -1619,9 +1619,9 @@
             5
           ],
           "assets": [],
-          "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/HashRouter.js",
-          "issuerId": 68,
-          "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
+          "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/BrowserRouter.js",
+          "issuerId": 62,
+          "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -2123,9 +2123,9 @@
             5
           ],
           "assets": [],
-          "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/HashRouter.js",
-          "issuerId": 68,
-          "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
+          "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/BrowserRouter.js",
+          "issuerId": 62,
+          "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -7970,9 +7970,9 @@
         "bootstrap"
       ],
       "files": [
-        "bootstrap.564bec4a.js"
+        "bootstrap.ff7587ba.js"
       ],
-      "hash": "564bec4a0f7c4f38da35",
+      "hash": "ff7587bab6df2a12f973",
       "parents": [],
       "modules": [],
       "filteredModules": 0,
@@ -8903,9 +8903,9 @@
         5
       ],
       "assets": [],
-      "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/HashRouter.js",
-      "issuerId": 68,
-      "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
+      "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/BrowserRouter.js",
+      "issuerId": 62,
+      "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -9407,9 +9407,9 @@
         5
       ],
       "assets": [],
-      "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/HashRouter.js",
-      "issuerId": 68,
-      "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
+      "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/BrowserRouter.js",
+      "issuerId": 62,
+      "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,

@@ -67,7 +67,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "https://ninaolo.github.io/";
+/******/ 	__webpack_require__.p = "https://ninaolo.github.io/code-yay/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 11);
@@ -1463,4 +1463,4 @@ module.exports = require("hoist-non-react-statics");
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.afdeb4a0.js.map
+//# sourceMappingURL=static.ab51200a.js.map
