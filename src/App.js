@@ -46,7 +46,6 @@ const Navbar = styled.nav`
 const MainContent = styled.div`
   padding: 3% 5%;
 `
-
 const App = () => (
     <Router>
         <AppStyles>
