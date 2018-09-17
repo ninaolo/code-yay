@@ -12,7 +12,7 @@ example. The code for this blog post can be found
 here: [https://github.com/ninaolo/react-static-github-pages-example](https://github.com/ninaolo/react-static-github-pages-example).
 
 ### Step 1: Set up template app
-Go to [https://github.com/nozzle/react-static]() and follow the instructions on how to set up a basic app from one of 
+Go to [https://github.com/nozzle/react-static](https://github.com/nozzle/react-static) and follow the instructions on how to set up a basic app from one of 
 their templates. I chose the [basic](https://github.com/nozzle/react-static/tree/master/examples/basic) template.
 
 ### Step 2: Add deploy script
