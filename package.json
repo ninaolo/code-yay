@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@material-ui/core": "^3.1.0",
     "chokidar": "2.0.3",
     "htmr": "0.6.3",
     "jdown": "^0.6.4",
@@ -24,9 +25,16 @@
     "styled-components": "^3.4.6"
   },
   "devDependencies": {
+    "@types/react": "^16.4.14",
+    "@types/react-hot-loader": "^4.1.0",
+    "@types/react-router": "^4.0.31",
+    "@types/webpack-env": "^1.13.6",
     "babel-plugin-styled-components": "^1.7.1",
+    "convert-tsconfig-paths-to-webpack-aliases": "^0.9.2",
     "eslint-config-react-tools": "1.x.x",
     "gh-pages": "^2.0.0",
-    "serve": "^6.1.0"
+    "serve": "^6.1.0",
+    "ts-loader": "^3.5.0",
+    "typescript": "^3.0.3"
   }
 }
