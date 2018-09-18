@@ -3,6 +3,9 @@ import {Router, Link} from 'react-static'
 import styled, {injectGlobal} from 'styled-components'
 import {hot} from 'react-hot-loader'
 import Routes from 'react-static-routes'
+import Button from 'components/Button'
+import MuiThemeProvider from "@material-ui/core/es/styles/MuiThemeProvider";
+import theme from 'components/theme'
 
 injectGlobal`
   body {
@@ -31,7 +34,7 @@ const AppStyles = styled.div`
     border-radius: 7px;
     margin: 35px 0;
   }
-`
+`;
 
 const Navbar = styled.nav`
   width: 100%;
@@ -41,25 +44,29 @@ const Navbar = styled.nav`
     padding: 1rem;
     display: inline-block;
   }
-`
+`;
 
 const MainContent = styled.div`
   padding: 3% 5%;
-`
+`;
+
 const App = () => (
     <Router>
-        <AppStyles>
-            <Navbar>
-                <Link exact to="/">code &bull; yay</Link>
-                <span>|</span>
-                <Link to="/about">About</Link>
-                <Link to="/blog">Blog</Link>
-            </Navbar>
-            <MainContent>
-                <Routes/>
-            </MainContent>
-        </AppStyles>
+        <MuiThemeProvider theme={theme}>
+            <AppStyles>
+                <Navbar>
+                    <Link exact to="/">code &bull; yay</Link>
+                    <span>|</span>
+                    <Link to="/about">About</Link>
+                    <Link to="/blog">Blog</Link>
+                </Navbar>
+                <MainContent>
+                    <Button variant="contained" color="primary">Hello</Button>
+                    <Routes/>
+                </MainContent>
+            </AppStyles>
+        </MuiThemeProvider>
     </Router>
-)
+);
 
 export default hot(module)(App)
