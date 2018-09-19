@@ -35,6 +35,10 @@ export default {
                 }),
             },
             {
+                path: '/learn',
+                component: 'src/containers/Learn',
+            },
+            {
                 path: '/blog',
                 component: 'src/containers/Blog',
                 getData: () => ({

@@ -1,16 +1,16 @@
 import React from 'react'
-import {withRouteData, Link} from 'react-static'
+import { withRouteData, Link } from 'react-static'
 
-function prettyDate(date) {
-    date = new Date(date);
-    const month = date.getMonth() + 1;
+const prettyDate = date => {
+    date = new Date(date)
+    const month = date.getMonth() + 1
     return `${date.getFullYear()}-${month.toString().padStart(2, "0")}-${date.getDate()}`
 }
 
-export default withRouteData(({posts}) => (
+export default withRouteData(({ posts }) => (
     <div>
         <h1>It's blog time.</h1>
-        <br/>
+        <br />
         All Posts:
         <ul>
             {posts.sort((a, b) => {
