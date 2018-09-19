@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "rootDir": "src",
     "target": "esnext",
     "module": "esnext",
     "jsx": "preserve",
@@ -8,13 +9,14 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,        
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "removeComments": false,
     "preserveConstEnums": true,
     "sourceMap": true,
     "skipLibCheck": true,
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "paths": {
       "@myPathAlias/*": [
         "src/path-alias-example/*"
