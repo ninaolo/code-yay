@@ -4,14 +4,15 @@ const path = require('path')
 // Needs to be valid JSON. All comments in tsconfig.json must be removed.
 const tsconfig = require('./tsconfig.json')
 
-const aliases = convPaths(tsconfig)
+let aliases = convPaths(tsconfig)
+aliases['@app'] = path.resolve(__dirname, 'src/')
 
 // Consumable std. Webpack Export
 module.exports = {
     resolve: {
         alias: aliases,
         modules: [
-            path.resolve('./src'),
+            path.resolve('./src/components'),
             path.resolve('./node_modules'),
         ],
     },
