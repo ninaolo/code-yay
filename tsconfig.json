@@ -1,36 +1,43 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
     "rootDir": "src",
     "target": "esnext",
     "module": "esnext",
-    "jsx": "preserve",
-    "allowJs": true,
+    "jsx": "react",
+    "allowJs": false,
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true,        
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "removeComments": false,
-    "preserveConstEnums": true,
+    "outDir": "dist",
     "sourceMap": true,
-    "skipLibCheck": true,
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "paths": {
-      "@myPathAlias/*": [
-        "src/path-alias-example/*"
+      "@app/*": [
+        "*"
       ]
     },
     "typeRoots": [
       "./node_modules/@types"
     ],
     "lib": [
-      "dom",
-      "es2015",
-      "es2016"
-    ]
+      "es5",
+      "es6",
+      "es7",
+      "es2017",
+      "dom"
+    ],
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true
   },
+  "include": [
+    "./src/**/*"
+  ],
   "exclude": [
     "dist/**/*",
     "public/**/*",
