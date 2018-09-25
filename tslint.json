@@ -1,0 +1,83 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-react",
+    "tslint-react-a11y",
+    "tslint-eslint-rules",
+    "tslint-config-airbnb"
+  ],
+  "rules": {
+    "import-name": false,
+    "jsx-boolean-value": false,
+    "jsx-no-multiline-js": false,
+    "jsx-self-close": true,
+    "jsx-space-before-trailing-slash": true,
+    "jsx-use-translation-function": true,
+    "jsx-wrap-multiline": true,
+    "max-line-length": false,
+    "member-access": [
+      true,
+      "no-public"
+    ],
+    "no-implicit-dependencies": [
+      true,
+      "dev"
+    ],
+    "no-submodule-imports": false,
+    "ordered-imports": false,
+    "prefer-array-literal": [
+      true,
+      {
+        "allow-type-parameters": true
+      }
+    ],
+    "semicolon": [
+      true,
+      "always",
+      "ignore-interfaces"
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case"
+    ]
+  },
+  "jsRules": {
+    "import-name": false,
+    "jsx-boolean-value": false,
+    "jsx-no-multiline-js": false,
+    "jsx-self-close": true,
+    "jsx-space-before-trailing-slash": true,
+    "jsx-use-translation-function": true,
+    "jsx-wrap-multiline": true,
+    "max-line-length": false,
+    "member-access": [
+      true,
+      "no-public"
+    ],
+    "no-implicit-dependencies": [
+      true,
+      "dev"
+    ],
+    "no-submodule-imports": false,
+    "ordered-imports": false,
+    "prefer-array-literal": [
+      true,
+      {
+        "allow-type-parameters": true
+      }
+    ],
+    "semicolon": [
+      true,
+      "always",
+      "ignore-interfaces"
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case"
+    ]
+  }
+}
