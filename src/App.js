@@ -61,10 +61,12 @@ const App = () => (
                     <Link to="/learn">Learn</Link>
                 </Navbar>
                 <MainContent>
-                    <Routes />
+                    <Routes/>
                 </MainContent>
             </AppStyles>
         </MuiThemeProvider>
+
+
     </Router>
 )
 
