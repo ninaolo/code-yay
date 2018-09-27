@@ -27,6 +27,9 @@ export default withRouteData((learnNode: LearnNode) => {
                 return <p key={h}>{h}</p>
             })}
 
+            <h3>Complexity</h3>
+            {node.content.complexity}
+
             <h3>Implementation</h3>
             {convert(node.content.contents)}
         </div>
