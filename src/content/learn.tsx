@@ -1,4 +1,4 @@
-interface LearnTree {
+export interface LearnTree {
     route: string,
     text: string,
     fullPath: string,
@@ -17,6 +17,7 @@ interface NodeContent {
     title: string,
     what: string
     how: string,
+    complexity?: string,
     contents: string,
 }
 
