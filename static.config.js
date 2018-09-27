@@ -55,12 +55,11 @@ const getRoutesFromNode = (node, path, learnPostsBySlug) => {
     node.fullPath = `${path}/${node.route}`
     if (node.slug) {
         node.content = learnPostsBySlug[node.slug]
-        console.log(learnPostsBySlug)
     }
 
     return {
         path: `/${node.route}`,
-        component: node.slug ? 'src/components/TestComp' : 'src/containers/Learn',
+        component: node.slug ? 'src/components/LearnNode' : 'src/containers/Learn',
         getData: () => ({
             node,
         }),
