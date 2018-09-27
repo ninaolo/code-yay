@@ -17,7 +17,6 @@ export default withRouteData(({node}) => {
 
             <h3>Implementation</h3>
             <p>{convert(node.content.contents)}</p>
-
         </div>
     );
 })
