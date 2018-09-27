@@ -1,5 +1,6 @@
 import React from "react";
 import { withRouteData } from 'react-static'
+// @ts-ignore
 import convert from 'htmr'
 import { Node } from '@app/content/learn'
 
