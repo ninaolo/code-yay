@@ -27,7 +27,7 @@ export default withRouteData((learnNode: LearnNode) => {
             })}
 
             <h3>Implementation</h3>
-            <p>{convert(node.content.contents)}</p>
+            {convert(node.content.contents)}
         </div>
     );
 })
