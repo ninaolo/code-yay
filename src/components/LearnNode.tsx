@@ -1,8 +1,19 @@
 import React from "react";
 import { withRouteData } from 'react-static'
 import convert from 'htmr'
+import { Node } from '@app/content/learn'
 
-export default withRouteData(({node}) => {
+interface LearnNode {
+    node: Node
+}
+
+export default withRouteData((learnNode: LearnNode) => {
+    const node = learnNode.node;
+
+    if (!node.content) {
+        return "Oops! No information found here."
+    }
+
     return (
         <div>
             <h1>{node.content.title}</h1>
@@ -12,7 +23,7 @@ export default withRouteData(({node}) => {
 
             <h3>How?</h3>
             {node.content.how.split(" | ").map((h: string) => {
-                return <p>{h}</p>
+                return <p key={h}>{h}</p>
             })}
 
             <h3>Implementation</h3>

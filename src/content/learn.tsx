@@ -1,4 +1,26 @@
-export const learnTree = {
+interface LearnTree {
+    route: string,
+    text: string,
+    fullPath: string,
+    children: Node[]
+}
+
+export interface Node {
+    route: string,
+    text: string,
+    children?: Node[]
+    slug?: string
+    content?: NodeContent
+}
+
+interface NodeContent {
+    title: string,
+    what: string
+    how: string,
+    contents: string,
+}
+
+export const learnTree: LearnTree = {
     route: 'learn',
     text: 'Learn',
     fullPath: '/learn',
@@ -38,4 +60,4 @@ export const learnTree = {
             children: []
         }
     ]
-}
+};
