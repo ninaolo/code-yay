@@ -2,8 +2,11 @@
 title: Heap sort
 slug: heap-sort
 what: Sorts by using a heap. The input array can be used as the actual heap --> no additional storage.
-how: STEP 1: Turn array into max-heap --> O(N) | STEP 2: Swap root N times with last element & make sure new root comes to right place --> O(N log N)
-complexity: Time average/best/worst: O(N + N log N) = O(N log N) <br/> Space: O(1)
+how: Turn array into max-heap --> O(N) | Swap root N times with last element & make sure new root comes to right place --> O(N log N)
+bestTime: O(N + N log N) = O(N log N)
+averageTime: O(N + N log N) = O(N log N)
+worstTime: O(N + N log N) = O(N log N)
+space: O(1)
 ---
 
 ```java
