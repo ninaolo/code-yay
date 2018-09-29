@@ -3,7 +3,8 @@ import { reloadRoutes } from 'react-static/node'
 import jdown from 'jdown'
 import chokidar from 'chokidar'
 import { ServerStyleSheet } from 'styled-components'
-import { learnTree } from '@app/content/learn'
+import path from 'path'
+import { learnTree } from './src/content/tree'
 
 // Paths Aliases defined through tsconfig.json
 const typescriptWebpackPaths = require('./webpack.config.js')
@@ -29,6 +30,7 @@ const getRoutesFromNode = (node, path, learnPostsBySlug) => {
 export default {
     siteRoot: 'https://ninaolo.github.io',
     basePath: 'code-yay',
+    entry: path.join(__dirname, 'src', 'index.tsx'),
 
     getSiteData: () => ({
         title: 'code-yay',
@@ -36,11 +38,11 @@ export default {
 
     getRoutes: async () => {
         const { posts, home, about, learn } = await jdown('content')
+
         const learnPostsBySlug = learn.reduce((map, post) => {
             map[post.slug] = post
             return map
         }, {})
-
         return [
             {
                 path: '/',
