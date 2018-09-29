@@ -7,7 +7,7 @@ export const learnTree = {
             route: 'sorting',
             text: 'Sorting',
             children: [{
-                route: 'bubbelsort',
+                route: 'bubblesort',
                 text: 'Bubble sort',
                 slug: 'bubble-sort'
             }, {
