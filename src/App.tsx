@@ -15,7 +15,7 @@ injectGlobal`
     margin: 0;
     padding: 0;
   }
-`
+`;
 
 const AppStyles = styled.div`
   a {
@@ -33,7 +33,7 @@ const AppStyles = styled.div`
     border-radius: 7px;
     margin: 35px 0;
   }
-`
+`;
 
 const Navbar = styled.nav`
   width: 100%;
@@ -43,11 +43,11 @@ const Navbar = styled.nav`
     padding: 1rem;
     display: inline-block;
   }
-`
+`;
 
 const MainContent = styled.div`
   padding: 3% 5%;
-`
+`;
 
 const App = () => (
     <Router>
@@ -68,6 +68,6 @@ const App = () => (
 
 
     </Router>
-)
+);
 
 export default hot(module)(App)
