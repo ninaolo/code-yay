@@ -7,7 +7,6 @@ const tsconfig = require('./tsconfig.json')
 let aliases = convPaths(tsconfig)
 aliases['@app'] = path.resolve(__dirname, 'src/')
 
-// Consumable std. Webpack Export
 module.exports = {
     resolve: {
         alias: aliases,
