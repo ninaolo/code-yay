@@ -13,13 +13,13 @@ chokidar.watch('content').on('all', () => reloadRoutes())
 chokidar.watch('src/content').on('all', () => reloadRoutes())
 
 const getRoutesFromNode = (node, path, learnPostsBySlug) => {
-    node.fullPath = `${path}/${node.route}`
+    node.fullPath = node.slug ? `${path}/${node.slug}` : `${path}/${node.route}`
     if (node.slug) {
         node.content = learnPostsBySlug[node.slug]
     }
 
     return {
-        path: `/${node.route}`,
+        path: node.slug ? `/${node.slug}` : `/${node.route}`,
         component: node.slug ? 'src/components/LearnNode' : 'src/containers/Learn',
         getData: () => ({
             node,
