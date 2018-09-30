@@ -10,6 +10,7 @@ import { learnTree } from './src/content/tree'
 const typescriptWebpackPaths = require('./webpack.config.js')
 
 chokidar.watch('content').on('all', () => reloadRoutes())
+chokidar.watch('src/content').on('all', () => reloadRoutes())
 
 const getRoutesFromNode = (node, path, learnPostsBySlug) => {
     node.fullPath = `${path}/${node.route}`

@@ -3,12 +3,13 @@ import { withRouteData } from 'react-static'
 // @ts-ignore
 import convert from 'htmr'
 import { Node } from '@app/content/learn'
+import { hot } from "react-hot-loader";
 
 interface LearnNode {
     node: Node
 }
 
-export default withRouteData((learnNode: LearnNode) => {
+const LearnNode = withRouteData((learnNode: LearnNode) => {
     const node = learnNode.node;
 
     if (!node.content) {
@@ -90,4 +91,6 @@ export default withRouteData((learnNode: LearnNode) => {
             {getImplementation()}
         </div>
     );
-})
+});
+
+export default hot(module)(LearnNode)
