@@ -55,11 +55,37 @@ export const learnTree = {
                 route: 'bsttraversal',
                 text: 'BST traversal',
                 slug: 'bst-traversal'
+            }, {
+                route: 'topologicalsort',
+                text: 'Topological sort',
+                slug: 'topological-sort'
+
             }]
         }, {
             route: 'concepts',
             text: 'Concepts',
-            children: []
+            children: [{
+                route: 'backtracking',
+                text: 'Backtracking',
+                slug: 'backtracking'
+            }, {
+                route: 'greedy',
+                text: 'Greedy',
+                slug: 'greedy'
+            }, {
+                route: 'memoization',
+                text: 'Memoization',
+                slug: 'memoization'
+            }, {
+                route: 'recursion',
+                text: 'Recursion',
+                slug: 'recursion'
+            }, {
+                route: 'tabulation',
+                text: 'Tabulation',
+                slug: 'tabulation'
+            }
+            ]
         }, {
             route: 'languages',
             text: 'Languages',
