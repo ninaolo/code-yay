@@ -61,18 +61,21 @@ export const learnTree = {
                 text: 'Strings',
                 children: [{
                     text: 'Anagram',
-                    slug: 'anagram'
+                    slug: 'strings-anagram'
                 }, {
                     text: 'Palindrome',
-                    slug: 'palindrome'
+                    slug: 'strings-palindrome'
                 }, {
                     text: 'Unique chars',
-                    slug: 'unique-chars'
+                    slug: 'strings-unique-chars'
                 }]
             }, {
                 route: 'trees',
                 text: 'Trees',
-                children: []
+                children: [{
+                    text: 'BST balanced',
+                    slug: 'trees-bst-balanced'
+                }]
             }]
         }, {
             route: 'algorithms',
