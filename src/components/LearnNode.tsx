@@ -75,12 +75,22 @@ const LearnNode = withRouteData((learnNode: LearnNode) => {
         return ""
     };
 
+    const getWhat = () => {
+        if (node.content && node.content.what) {
+            return (
+                <div>
+                    <h3>What?</h3>
+                    <p>{node.content.what}</p>
+                </div>
+            )
+        }
+        return ""
+    };
+
     return (
         <div>
             <h1>{node.content.title}</h1>
-
-            <h3>What?</h3>
-            <p>{node.content.what}</p>
+            {getWhat()}
 
             {getHow()}
 
