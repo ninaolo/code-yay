@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en"><head><link rel="preload" as="script" href="https://ninaolo.github.io/code-yay/bootstrap.fe5f5e80.js"/><link rel="preload" as="script" href="https://ninaolo.github.io/code-yay/templates/src/components/LearnNode.76c61037.js"/><link rel="preload" as="script" href="https://ninaolo.github.io/code-yay/main.f68a56db.js"/><meta charSet="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><style data-styled-components="fTcnXq fMtres huPxDo">
+/* sc-component-id: sc-global-3667178187 */
+body{font-family:'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial, 'Lucida Grande',sans-serif;font-weight:300;font-size:15px;margin:0;padding:0;}
+/* sc-component-id: App__AppStyles-nie0ws-0 */
+.fTcnXq a{-webkit-text-decoration:none;text-decoration:none;color:#704f56;font-weight:bold;} .fTcnXq img{max-width:100%;} .fTcnXq pre{background:#f4f4f4;padding:.8em;overflow:auto;border-radius:7px;margin:35px 0;}
+/* sc-component-id: App__Navbar-nie0ws-1 */
+.fMtres{width:100%;background:#39ae7f;} .fMtres a,.fMtres span{color:white;padding:1rem;display:inline-block;}
+/* sc-component-id: App__MainContent-nie0ws-2 */
+.huPxDo{padding:3% 5%;}</style></head><body><div id="root"><div class="App__AppStyles-nie0ws-0 fTcnXq" data-reactroot=""><nav class="App__Navbar-nie0ws-1 fMtres"><a href="https://ninaolo.github.io/code-yay/">code • yay</a><span>|</span><a href="https://ninaolo.github.io/code-yay/about">About</a><a href="https://ninaolo.github.io/code-yay/blog">Blog</a><a class="active" aria-current="page" href="https://ninaolo.github.io/code-yay/learn">Learn</a></nav><div class="App__MainContent-nie0ws-2 huPxDo"><div><h1>Merge sort</h1><div><h3>What?</h3><p>Divide-and-conquer algorithm that sorts by repeatedly dividing the list in two and then merging the two sub-lists. Usually implemented with array copies and therefore takes up some extra space.</p></div><div><h3>How?</h3><ul><li>Split list in two</li><li>Recursively sort left part</li><li>Recursively sort right part</li><li>Merge</li></ul></div><div><h3>Complexity</h3><ul><li><b>Time best: </b>O(N log N)</li><li><b>Time worst: </b>O(N log N)</li><li><b>Time average: </b>O(N log N)</li><li><b>Space: </b>O(N) for extra storage</li></ul></div><div><h3 id="implementation">Implementation</h3>
+<pre><code class="lang-java">public class Coderview {
+
+    private static void merge(Comparable[] left, Comparable[] right, Comparable[] list) {
+
+        // Define the indexes.
+        int iLeft = 0;
+        int iRight = 0;
+        int iList = 0;
+
+        // Loop and copy the smallest element each time from left/right list.
+        while (iLeft &lt; left.length &amp;&amp; iRight &lt; right.length) {
+            if (left[iLeft].compareTo(right[iRight]) &lt; 0) {
+                list[iList] = left[iLeft];
+                iLeft++;
+            } else {
+                list[iList] = right[iRight];
+                iRight++;
+            }
+            iList++;
+        }
+
+        // Copy elements that are left.
+        System.arraycopy(left, iLeft, list, iList, left.length - iLeft);
+        System.arraycopy(right, iRight, list, iList, right.length - iRight);
+    }
+
+    public static void mergeSort(Comparable[] list) {
+
+        // Base case - otherwise infinite recursion.
+        if (list.length == 1) {
+            return;
+        }
+
+        // Split in two, creating two new lists in memory and copying the elements.
+        Comparable[] left = new Comparable[list.length / 2];
+        Comparable[] right = new Comparable[list.length - left.length];
+        System.arraycopy(list, 0, left, 0, left.length);
+        System.arraycopy(list, left.length, right, 0, right.length);
+
+        // Recursively sort both halves.
+        mergeSort(left);
+        mergeSort(right);
+
+        // Merge the two sorted parts.
+        merge(left, right, list);
+    }
+}
+</code></pre></div></div></div></div></div><script type="text/javascript">window.__CSS_CHUNKS__ = {}</script><script type="text/javascript">
+    window.__routeInfo = {"path":"learn/sorting/merge-sort","templateID":3,"sharedPropsHashes":{},"localProps":null,"allProps":{"node":{"text":"Merge sort","slug":"merge-sort","fullPath":"/learn/sorting/merge-sort","content":{"title":"Merge sort","slug":"merge-sort","what":"Divide-and-conquer algorithm that sorts by repeatedly dividing the list in two and then merging the two sub-lists. Usually implemented with array copies and therefore takes up some extra space.","how":"Split list in two | Recursively sort left part | Recursively sort right part | Merge","bestTime":"O(N log N)","averageTime":"O(N log N)","worstTime":"O(N log N)","space":"O(N) for extra storage","contents":"<h3 id=\"implementation\">Implementation</h3>\n<pre><code class=\"lang-java\">public class Coderview {\n\n    private static void merge(Comparable[] left, Comparable[] right, Comparable[] list) {\n\n        // Define the indexes.\n        int iLeft = 0;\n        int iRight = 0;\n        int iList = 0;\n\n        // Loop and copy the smallest element each time from left/right list.\n        while (iLeft &lt; left.length &amp;&amp; iRight &lt; right.length) {\n            if (left[iLeft].compareTo(right[iRight]) &lt; 0) {\n                list[iList] = left[iLeft];\n                iLeft++;\n            } else {\n                list[iList] = right[iRight];\n                iRight++;\n            }\n            iList++;\n        }\n\n        // Copy elements that are left.\n        System.arraycopy(left, iLeft, list, iList, left.length - iLeft);\n        System.arraycopy(right, iRight, list, iList, right.length - iRight);\n    }\n\n    public static void mergeSort(Comparable[] list) {\n\n        // Base case - otherwise infinite recursion.\n        if (list.length == 1) {\n            return;\n        }\n\n        // Split in two, creating two new lists in memory and copying the elements.\n        Comparable[] left = new Comparable[list.length / 2];\n        Comparable[] right = new Comparable[list.length - left.length];\n        System.arraycopy(list, 0, left, 0, left.length);\n        System.arraycopy(list, left.length, right, 0, right.length);\n\n        // Recursively sort both halves.\n        mergeSort(left);\n        mergeSort(right);\n\n        // Merge the two sorted parts.\n        merge(left, right, list);\n    }\n}\n</code></pre>\n"}}},"siteData":{"title":"code-yay"}};</script><script defer="" type="text/javascript" src="https://ninaolo.github.io/code-yay/bootstrap.fe5f5e80.js"></script><script defer="" type="text/javascript" src="https://ninaolo.github.io/code-yay/templates/src/components/LearnNode.76c61037.js"></script><script defer="" type="text/javascript" src="https://ninaolo.github.io/code-yay/main.f68a56db.js"></script></body></html>

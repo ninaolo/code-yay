@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="en"><head><link rel="preload" as="script" href="https://ninaolo.github.io/code-yay/bootstrap.fe5f5e80.js"/><link rel="preload" as="script" href="https://ninaolo.github.io/code-yay/templates/src/components/LearnNode.76c61037.js"/><link rel="preload" as="script" href="https://ninaolo.github.io/code-yay/main.f68a56db.js"/><meta charSet="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><style data-styled-components="fTcnXq fMtres huPxDo">
+/* sc-component-id: sc-global-3667178187 */
+body{font-family:'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial, 'Lucida Grande',sans-serif;font-weight:300;font-size:15px;margin:0;padding:0;}
+/* sc-component-id: App__AppStyles-nie0ws-0 */
+.fTcnXq a{-webkit-text-decoration:none;text-decoration:none;color:#704f56;font-weight:bold;} .fTcnXq img{max-width:100%;} .fTcnXq pre{background:#f4f4f4;padding:.8em;overflow:auto;border-radius:7px;margin:35px 0;}
+/* sc-component-id: App__Navbar-nie0ws-1 */
+.fMtres{width:100%;background:#39ae7f;} .fMtres a,.fMtres span{color:white;padding:1rem;display:inline-block;}
+/* sc-component-id: App__MainContent-nie0ws-2 */
+.huPxDo{padding:3% 5%;}</style></head><body><div id="root"><div class="App__AppStyles-nie0ws-0 fTcnXq" data-reactroot=""><nav class="App__Navbar-nie0ws-1 fMtres"><a href="https://ninaolo.github.io/code-yay/">code • yay</a><span>|</span><a href="https://ninaolo.github.io/code-yay/about">About</a><a href="https://ninaolo.github.io/code-yay/blog">Blog</a><a class="active" aria-current="page" href="https://ninaolo.github.io/code-yay/learn">Learn</a></nav><div class="App__MainContent-nie0ws-2 huPxDo"><div><h1>Topological sort (graphs)</h1><div><h3>What?</h3><p>Ordering for DAG&#x27;s. Every parent must come before its child. Can be multiple for same graph.</p></div><div><h3>How?</h3><ul><li>Kind of like DFS but with extra stack (recursion stack + stack).</li></ul></div><div><h3 id="example-applications">Example applications</h3>
+<ol>
+<li>Scheduling jobs with dependencies given as graph.</li>
+<li>Finding order of compilation tasks to perform in makefiles.</li>
+</ol>
+<h3 id="implementation">Implementation</h3>
+<pre><code class="lang-java">public class Coderview {
+
+    /*
+     * Topological sort for one entire DAG.
+     */
+    public static void topologicalSort(Graph graph) {
+        Stack&amp;lt;Vertex&amp;gt; stack = new Stack&lt;&gt;();
+        Set&amp;lt;Integer&amp;gt; visited = new HashSet&lt;&gt;();
+
+        // Go through entire graph.
+        for (Vertex current : graph.getVertices()) {
+            if (!visited.contains(current.getId())) {
+                topologicalSort(current, stack, visited);
+            }
+        }
+
+        // Print the stack.
+        while (!stack.isEmpty()) {
+            System.out.println(stack.pop().getId());
+        }
+    }
+
+    /*
+     * Recursive part of topological sort.
+     */
+    private static void topologicalSort(Vertex current, Stack&amp;lt;Vertex&amp;gt; stack, Set&amp;lt;Integer&amp;gt; visited) {
+        visited.add(current.getId());
+
+        for (Edge edge : current.getEdges()) {
+            Vertex neighbor = edge.getDestination();
+            if (!visited.contains(neighbor.getId())) {
+                topologicalSort(neighbor, stack, visited);
+            }
+        }
+
+        stack.push(current);
+    }
+}
+</code></pre>
+<pre><code class="lang-java">public class Graph {
+
+    private Vertex[] vertices;
+
+    public Graph(Vertex[] vertices) {
+        this.vertices = vertices;
+    }
+
+    public Vertex[] getVertices() {
+        return vertices;
+    }
+}
+</code></pre>
+<pre><code class="lang-java">public class Vertex {
+
+    private int id;
+    private Edge[] adjacencyList;
+
+    public Vertex(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public Edge[] getEdges() {
+        return adjacencyList == null ? new Edge[0] : adjacencyList;
+    }
+
+    public void setEdges(Edge[] adjacencyList) {
+        this.adjacencyList = adjacencyList;
+    }
+}
+</code></pre>
+<pre><code class="lang-java">public class Edge {
+
+    private Vertex destination;
+    private double weight;
+
+    public Edge(Vertex destination, double weight) {
+        this.destination = destination;
+        this.weight = weight;
+    }
+
+    public Vertex getDestination() {
+        return destination;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+}
+</code></pre>
+<pre><code class="lang-java">
+</code></pre></div></div></div></div></div><script type="text/javascript">window.__CSS_CHUNKS__ = {}</script><script type="text/javascript">
+    window.__routeInfo = {"path":"learn/algorithms/topological-sort","templateID":3,"sharedPropsHashes":{},"localProps":null,"allProps":{"node":{"text":"Topological sort","slug":"topological-sort","fullPath":"/learn/algorithms/topological-sort","content":{"title":"Topological sort (graphs)","slug":"topological-sort","what":"Ordering for DAG's. Every parent must come before its child. Can be multiple for same graph.","how":"Kind of like DFS but with extra stack (recursion stack + stack).","averageTime":"Same as DFS --> O(E + V).","contents":"<h3 id=\"example-applications\">Example applications</h3>\n<ol>\n<li>Scheduling jobs with dependencies given as graph.</li>\n<li>Finding order of compilation tasks to perform in makefiles.</li>\n</ol>\n<h3 id=\"implementation\">Implementation</h3>\n<pre><code class=\"lang-java\">public class Coderview {\n\n    /*\n     * Topological sort for one entire DAG.\n     */\n    public static void topologicalSort(Graph graph) {\n        Stack&amp;lt;Vertex&amp;gt; stack = new Stack&lt;&gt;();\n        Set&amp;lt;Integer&amp;gt; visited = new HashSet&lt;&gt;();\n\n        // Go through entire graph.\n        for (Vertex current : graph.getVertices()) {\n            if (!visited.contains(current.getId())) {\n                topologicalSort(current, stack, visited);\n            }\n        }\n\n        // Print the stack.\n        while (!stack.isEmpty()) {\n            System.out.println(stack.pop().getId());\n        }\n    }\n\n    /*\n     * Recursive part of topological sort.\n     */\n    private static void topologicalSort(Vertex current, Stack&amp;lt;Vertex&amp;gt; stack, Set&amp;lt;Integer&amp;gt; visited) {\n        visited.add(current.getId());\n\n        for (Edge edge : current.getEdges()) {\n            Vertex neighbor = edge.getDestination();\n            if (!visited.contains(neighbor.getId())) {\n                topologicalSort(neighbor, stack, visited);\n            }\n        }\n\n        stack.push(current);\n    }\n}\n</code></pre>\n<pre><code class=\"lang-java\">public class Graph {\n\n    private Vertex[] vertices;\n\n    public Graph(Vertex[] vertices) {\n        this.vertices = vertices;\n    }\n\n    public Vertex[] getVertices() {\n        return vertices;\n    }\n}\n</code></pre>\n<pre><code class=\"lang-java\">public class Vertex {\n\n    private int id;\n    private Edge[] adjacencyList;\n\n    public Vertex(int id) {\n        this.id = id;\n    }\n\n    public int getId() {\n        return id;\n    }\n\n    public Edge[] getEdges() {\n        return adjacencyList == null ? new Edge[0] : adjacencyList;\n    }\n\n    public void setEdges(Edge[] adjacencyList) {\n        this.adjacencyList = adjacencyList;\n    }\n}\n</code></pre>\n<pre><code class=\"lang-java\">public class Edge {\n\n    private Vertex destination;\n    private double weight;\n\n    public Edge(Vertex destination, double weight) {\n        this.destination = destination;\n        this.weight = weight;\n    }\n\n    public Vertex getDestination() {\n        return destination;\n    }\n\n    public double getWeight() {\n        return weight;\n    }\n}\n</code></pre>\n<pre><code class=\"lang-java\">\n</code></pre>\n"}}},"siteData":{"title":"code-yay"}};</script><script defer="" type="text/javascript" src="https://ninaolo.github.io/code-yay/bootstrap.fe5f5e80.js"></script><script defer="" type="text/javascript" src="https://ninaolo.github.io/code-yay/templates/src/components/LearnNode.76c61037.js"></script><script defer="" type="text/javascript" src="https://ninaolo.github.io/code-yay/main.f68a56db.js"></script></body></html>

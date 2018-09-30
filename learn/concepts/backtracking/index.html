@@ -1,0 +1,107 @@
+<!DOCTYPE html><html lang="en"><head><link rel="preload" as="script" href="https://ninaolo.github.io/code-yay/bootstrap.fe5f5e80.js"/><link rel="preload" as="script" href="https://ninaolo.github.io/code-yay/templates/src/components/LearnNode.76c61037.js"/><link rel="preload" as="script" href="https://ninaolo.github.io/code-yay/main.f68a56db.js"/><meta charSet="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><style data-styled-components="fTcnXq fMtres huPxDo">
+/* sc-component-id: sc-global-3667178187 */
+body{font-family:'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial, 'Lucida Grande',sans-serif;font-weight:300;font-size:15px;margin:0;padding:0;}
+/* sc-component-id: App__AppStyles-nie0ws-0 */
+.fTcnXq a{-webkit-text-decoration:none;text-decoration:none;color:#704f56;font-weight:bold;} .fTcnXq img{max-width:100%;} .fTcnXq pre{background:#f4f4f4;padding:.8em;overflow:auto;border-radius:7px;margin:35px 0;}
+/* sc-component-id: App__Navbar-nie0ws-1 */
+.fMtres{width:100%;background:#39ae7f;} .fMtres a,.fMtres span{color:white;padding:1rem;display:inline-block;}
+/* sc-component-id: App__MainContent-nie0ws-2 */
+.huPxDo{padding:3% 5%;}</style></head><body><div id="root"><div class="App__AppStyles-nie0ws-0 fTcnXq" data-reactroot=""><nav class="App__Navbar-nie0ws-1 fMtres"><a href="https://ninaolo.github.io/code-yay/">code • yay</a><span>|</span><a href="https://ninaolo.github.io/code-yay/about">About</a><a href="https://ninaolo.github.io/code-yay/blog">Blog</a><a class="active" aria-current="page" href="https://ninaolo.github.io/code-yay/learn">Learn</a></nav><div class="App__MainContent-nie0ws-2 huPxDo"><div><h1>Backtracking</h1><div><h3>What?</h3><p>Using recursion (or stack) to examine all possible solutions/paths in a problem. If you reach a dead end, you backtrack (go back) to a previous state.</p></div><div><h3 id="example-find-a-word-in-a-matrix">Example: find a word in a matrix</h3>
+<p>Let’s say we have a matrix with chars and we want to find a certain word. A backtracking algorithm could step through
+the matrix and look for paths, and if the path comes to an end, it backtracks to look for other possibilities.</p>
+<pre><code class="lang-java">public class WordSearchMatrix {
+
+    private char[][] matrix;
+    private int N;
+    private char[][] solution;
+    private int path;
+
+    public WordSearchMatrix(char[][] matrix) {
+        this.matrix = matrix;
+        this.N = matrix.length;
+    }
+
+    public Optional&amp;lt;int[][]&amp;gt; searchWord(String searchWord) {
+        solution = new char[N][N];
+        path = 1;
+        word = searchWord;
+
+        // Go through entire matrix.
+        for (int row = 0; row &lt; N; row++) {
+            for (int col = 0; col &lt; N; col++) {
+
+                // Note: charIndex is always 0 here because at this step we&#x27;re always at the beginning
+                // and findSolution does the recursive part.
+                if (findSolution(int row, int col, 0)) {
+                    return solution;
+                }
+            }
+        }
+        return Optional.empty();
+    }
+
+    private boolean findSolution(int row, int col, int charIndex) {
+
+        // If current cell is already visited or doesn&#x27;t contain the correct char, then no solution here.
+        if (solution[row][col] != 0 || matrix[row][col] != word.charAt(charIndex)) {
+            return false;
+        }
+
+        // If we&#x27;re at the last charIndex and it contains the correct char, we have a solution.
+        if (charIndex == word.length() - 1) {
+            solution[row][col] = path++;
+            return true;
+        }
+
+        // We found a correct char. Let&#x27;s continue.
+        charIndex++;
+        solution[row][col] = path++;
+
+        // Go down.
+        if (row + 1 &lt; N &amp;&amp; findSolution(row + 1, col, charIndex)) {
+            return true;
+        }
+
+        // Go up.
+        if (row - 1 &gt;= 0 &amp;&amp; search(row - 1, col, charIndex)) {
+            return true;
+        }
+
+        // Go right.
+        if (col + 1 &lt; N &amp;&amp; search(row, col + 1, charIndex)) {
+            return true;
+        }
+
+        // Go left.
+        if (col - 1 &gt;= 0 &amp;&amp; search(row, col - 1, charIndex)) {
+            return true;
+        }
+
+        // Go diagonally up right.
+        if (row - 1 &gt;= 0 &amp;&amp; col + 1 &lt; N &amp;&amp; search(row - 1, col + 1, charIndex)) {
+            return true;
+        }
+
+        // Go diagonally up left.
+        if (row - 1 &gt;= 0 &amp;&amp; col - 1 &gt;= 0 &amp;&amp; search(row - 1, col - 1, charIndex)) {
+            return true;
+        }
+
+        // Go diagonally down left.
+        if (row + 1 &lt; N &amp;&amp; col - 1 &gt;= 0 &amp;&amp; search(row + 1, col - 1, charIndex)) {
+            return true;
+        }
+
+        // Go diagonally down right.
+        if (row + 1 &lt; N &amp;&amp; col + 1 &lt; N &amp;&amp; search(row + 1, col + 1, charIndex)) {
+            return true;
+        }
+
+        // If none of the above steps worked out --&gt; BACKTRACK.
+        path--;
+        solution[row][col] = 0;
+        return false;
+    }
+}
+</code></pre></div></div></div></div></div><script type="text/javascript">window.__CSS_CHUNKS__ = {}</script><script type="text/javascript">
+    window.__routeInfo = {"path":"learn/concepts/backtracking","templateID":3,"sharedPropsHashes":{},"localProps":null,"allProps":{"node":{"text":"Backtracking","slug":"backtracking","fullPath":"/learn/concepts/backtracking","content":{"title":"Backtracking","slug":"backtracking","what":"Using recursion (or stack) to examine all possible solutions/paths in a problem. If you reach a dead end, you backtrack (go back) to a previous state.","contents":"<h3 id=\"example-find-a-word-in-a-matrix\">Example: find a word in a matrix</h3>\n<p>Let’s say we have a matrix with chars and we want to find a certain word. A backtracking algorithm could step through\nthe matrix and look for paths, and if the path comes to an end, it backtracks to look for other possibilities.</p>\n<pre><code class=\"lang-java\">public class WordSearchMatrix {\n\n    private char[][] matrix;\n    private int N;\n    private char[][] solution;\n    private int path;\n\n    public WordSearchMatrix(char[][] matrix) {\n        this.matrix = matrix;\n        this.N = matrix.length;\n    }\n\n    public Optional&amp;lt;int[][]&amp;gt; searchWord(String searchWord) {\n        solution = new char[N][N];\n        path = 1;\n        word = searchWord;\n\n        // Go through entire matrix.\n        for (int row = 0; row &lt; N; row++) {\n            for (int col = 0; col &lt; N; col++) {\n\n                // Note: charIndex is always 0 here because at this step we&#39;re always at the beginning\n                // and findSolution does the recursive part.\n                if (findSolution(int row, int col, 0)) {\n                    return solution;\n                }\n            }\n        }\n        return Optional.empty();\n    }\n\n    private boolean findSolution(int row, int col, int charIndex) {\n\n        // If current cell is already visited or doesn&#39;t contain the correct char, then no solution here.\n        if (solution[row][col] != 0 || matrix[row][col] != word.charAt(charIndex)) {\n            return false;\n        }\n\n        // If we&#39;re at the last charIndex and it contains the correct char, we have a solution.\n        if (charIndex == word.length() - 1) {\n            solution[row][col] = path++;\n            return true;\n        }\n\n        // We found a correct char. Let&#39;s continue.\n        charIndex++;\n        solution[row][col] = path++;\n\n        // Go down.\n        if (row + 1 &lt; N &amp;&amp; findSolution(row + 1, col, charIndex)) {\n            return true;\n        }\n\n        // Go up.\n        if (row - 1 &gt;= 0 &amp;&amp; search(row - 1, col, charIndex)) {\n            return true;\n        }\n\n        // Go right.\n        if (col + 1 &lt; N &amp;&amp; search(row, col + 1, charIndex)) {\n            return true;\n        }\n\n        // Go left.\n        if (col - 1 &gt;= 0 &amp;&amp; search(row, col - 1, charIndex)) {\n            return true;\n        }\n\n        // Go diagonally up right.\n        if (row - 1 &gt;= 0 &amp;&amp; col + 1 &lt; N &amp;&amp; search(row - 1, col + 1, charIndex)) {\n            return true;\n        }\n\n        // Go diagonally up left.\n        if (row - 1 &gt;= 0 &amp;&amp; col - 1 &gt;= 0 &amp;&amp; search(row - 1, col - 1, charIndex)) {\n            return true;\n        }\n\n        // Go diagonally down left.\n        if (row + 1 &lt; N &amp;&amp; col - 1 &gt;= 0 &amp;&amp; search(row + 1, col - 1, charIndex)) {\n            return true;\n        }\n\n        // Go diagonally down right.\n        if (row + 1 &lt; N &amp;&amp; col + 1 &lt; N &amp;&amp; search(row + 1, col + 1, charIndex)) {\n            return true;\n        }\n\n        // If none of the above steps worked out --&gt; BACKTRACK.\n        path--;\n        solution[row][col] = 0;\n        return false;\n    }\n}\n</code></pre>\n"}}},"siteData":{"title":"code-yay"}};</script><script defer="" type="text/javascript" src="https://ninaolo.github.io/code-yay/bootstrap.fe5f5e80.js"></script><script defer="" type="text/javascript" src="https://ninaolo.github.io/code-yay/templates/src/components/LearnNode.76c61037.js"></script><script defer="" type="text/javascript" src="https://ninaolo.github.io/code-yay/main.f68a56db.js"></script></body></html>
