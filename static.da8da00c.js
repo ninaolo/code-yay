@@ -559,6 +559,14 @@ var _reactStaticRoutes = __webpack_require__(18);
 
 var _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);
 
+var _theme = __webpack_require__(29);
+
+var _theme2 = _interopRequireDefault(_theme);
+
+var _MuiThemeProvider = __webpack_require__(32);
+
+var _MuiThemeProvider2 = _interopRequireDefault(_MuiThemeProvider);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
@@ -577,7 +585,7 @@ var MainContent = _styledComponents2.default.div.withConfig({
   componentId: 'nie0ws-2'
 })(['padding:3% 5%;']);
 var App = function App() {
-  return _react2.default.createElement(_reactStatic.Router, null, _react2.default.createElement(AppStyles, null, _react2.default.createElement(Navbar, null, _react2.default.createElement(_reactStatic.Link, { exact: true, to: "/" }, 'code \u2022 yay'), _react2.default.createElement("span", null, "|"), _react2.default.createElement(_reactStatic.Link, { to: "/about" }, "About"), _react2.default.createElement(_reactStatic.Link, { to: "/blog" }, "Blog"), _react2.default.createElement(_reactStatic.Link, { to: "/learn" }, "Learn")), _react2.default.createElement(MainContent, null, _react2.default.createElement(_reactStaticRoutes2.default, null))));
+  return _react2.default.createElement(_reactStatic.Router, null, _react2.default.createElement(_MuiThemeProvider2.default, { theme: _theme2.default }, _react2.default.createElement(AppStyles, null, _react2.default.createElement(Navbar, null, _react2.default.createElement(_reactStatic.Link, { exact: true, to: "/" }, 'code \u2022 yay'), _react2.default.createElement("span", null, "|"), _react2.default.createElement(_reactStatic.Link, { to: "/about" }, "About"), _react2.default.createElement(_reactStatic.Link, { to: "/blog" }, "Blog"), _react2.default.createElement(_reactStatic.Link, { to: "/learn" }, "Learn")), _react2.default.createElement(MainContent, null, _react2.default.createElement(_reactStaticRoutes2.default, null)))));
 };
 exports.default = (0, _reactHotLoader.hot)(module)(App);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)(module)))
@@ -1568,7 +1576,52 @@ exports.default = Button;
 
 module.exports = require("@material-ui/core/Button");
 
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _styles = __webpack_require__(30);
+
+var _amber = __webpack_require__(31);
+
+var _amber2 = _interopRequireDefault(_amber);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var theme = (0, _styles.createMuiTheme)({
+    palette: {
+        primary: _amber2.default,
+        secondary: _amber2.default
+    }
+});
+exports.default = theme;
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/styles");
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/colors/amber");
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/styles/MuiThemeProvider");
+
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.c4a536fc.js.map
+//# sourceMappingURL=static.da8da00c.js.map
