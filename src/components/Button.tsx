@@ -12,7 +12,7 @@ const StyledButton = styled(MuiButton) <IProps>`
   && {
     border-radius: ${props => (props.round ? '1.5rem' : '0')};
     padding: ${props => props.box ? '3rem' : '.75rem 3rem'};
-    width: ${props => props.box ? '150px' : 'inherit'};
+    width: ${props => props.box ? '200px' : 'inherit'};
     text-transform: none;
     box-shadow: none;
   }
