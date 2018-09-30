@@ -89,7 +89,15 @@ export const learnTree = {
         }, {
             route: 'languages',
             text: 'Languages',
-            children: []
+            children: [{
+                route: 'java',
+                text: 'Java',
+                children: [{
+                    route: 'datatypes',
+                    text: 'Datatypes',
+                    slug: 'java-datatypes'
+                }]
+            }]
         }, {
             route: 'datastructures',
             text: 'Datastructures',
