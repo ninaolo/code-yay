@@ -65,8 +65,7 @@ const App = () => (
                 </MainContent>
             </AppStyles>
         </MuiThemeProvider>
-
-
+        
     </Router>
 );
 
