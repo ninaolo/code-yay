@@ -67,7 +67,6 @@ export default withRouteData((learnNode: LearnNode) => {
         if (node.content && node.content.contents) {
             return (
                 <div>
-                    <h3>Implementation</h3>
                     {convert(node.content.contents)}
                 </div>
             )
