@@ -33,16 +33,16 @@ export default class LinkButtonList extends React.Component<LinkButtonListProps,
     render() {
 
         const LearnButton: React.SFC<LinkButtonProps> = props => (
-            <Button color="primary" variant="contained"
-                    box={true} component={ButtonLink} {...props}>{props.text}</Button>
-        );
+                <StyledButtonContainer>
+                    <Button color="primary" variant="contained" round
+                            box component={ButtonLink} {...props}>{props.text}</Button>
+                </StyledButtonContainer>
+            );
 
         return (
             <StyledLearnButtons>
                 {this.props.links.map(p => (
-                    <StyledButtonContainer>
-                        <LearnButton text={p.text} to={p.to} key={p.to}/>
-                    </StyledButtonContainer>
+                    <LearnButton text={p.text} to={p.to} key={p.to}/>
                 ))}
             </StyledLearnButtons>
         )
