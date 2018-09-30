@@ -90,6 +90,22 @@ export const learnTree = {
             route: 'languages',
             text: 'Languages',
             children: []
+        }, {
+            route: 'datastructures',
+            text: 'Datastructures',
+            children: [{
+                route: 'binarytree',
+                text: 'Binary tree',
+                slug: 'binary-tree'
+            }, {
+                route: 'prefixtree',
+                text: 'Prefix tree',
+                slug: 'prefix-tree'
+            }, {
+                route: 'splay',
+                text: 'Splay',
+                slug: 'splay'
+            }]
         }
     ]
 }
