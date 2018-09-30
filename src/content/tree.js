@@ -35,7 +35,35 @@ export const learnTree = {
         }, {
             route: 'algorithms',
             text: 'Algorithms',
+            children: [{
+                route: 'astar',
+                text: 'A-star',
+                slug: 'a-star'
+            }, {
+                route: 'bfsgraph',
+                text: 'BFS graph',
+                slug: 'bfs-graph'
+            }, {
+                route: 'dfsgraph',
+                text: 'DFS graph',
+                slug: 'dfs-graph'
+            }, {
+                route: 'dijkstras',
+                text: 'Dijkstras',
+                slug: 'dijkstras'
+            }, {
+                route: 'bsttraversal',
+                text: 'BST traversal',
+                slug: 'bst-traversal'
+            }]
+        }, {
+            route: 'concepts',
+            text: 'Concepts',
+            children: []
+        }, {
+            route: 'languages',
+            text: 'Languages',
             children: []
         }
     ]
-};
+}

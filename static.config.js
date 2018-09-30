@@ -43,6 +43,7 @@ export default {
             map[post.slug] = post
             return map
         }, {})
+
         return [
             {
                 path: '/',

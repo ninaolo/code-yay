@@ -10,6 +10,7 @@ interface Data {
 export default withRouteData((data: Data) => {
     const tree = data.node;
     const links = tree.children.map(child => ({text: child.text, to: `${tree.fullPath}/${child.route}`}));
+
     return (
         <div>
             <LinkButtonList links={links}/>
