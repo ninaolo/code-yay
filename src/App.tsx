@@ -3,8 +3,8 @@ import { Router, Link } from 'react-static'
 import styled, { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
 import Routes from 'react-static-routes'
-import MuiThemeProvider from '@material-ui/core/es/styles/MuiThemeProvider'
 import theme from 'components/theme'
+import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 
 injectGlobal`
   body {
