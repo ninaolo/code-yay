@@ -5,6 +5,8 @@ what: A very simple sorting algorithm using double for-loops. It's slow and has 
 how: For every element... | For every pair of elements... | If left is greater than right - swap
 ---
 
+### Implementation
+
 ```java
 public class Coderview {
 
