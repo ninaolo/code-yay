@@ -31,7 +31,51 @@ export const learnTree = {
         {
             route: 'problems',
             text: 'Problems',
-            children: []
+            children: [{
+                route: 'arrays',
+                text: 'Arrays',
+                children: [{
+                    route: 'spiral',
+                    text: 'Spiral',
+                    slug: 'arrays-spiral'
+                }, {
+                    route: 'sum-of-two',
+                    text: 'Sum of two',
+                    slug: 'arrays-sum-of-two'
+                }]
+            }, {
+                route: 'hashtable',
+                text: 'Hashtable',
+                children: [{
+                    route: 'implement',
+                    text: 'Implement',
+                    slug: 'hashtable-implement'
+                }]
+            }, {
+                route: 'linked-list',
+                text: 'Linked list',
+                children: [{
+                    route: 'cycle',
+                    text: 'Cycle',
+                    slug: 'linked-list-cycle'
+                }, {
+                    route: 'delete',
+                    text: 'Delete',
+                    slug: 'linked-list-delete'
+                }, {
+                    route: 'merge',
+                    text: 'Merge',
+                    slug: 'linked-list-merge'
+                }]
+            }, {
+                route: 'strings',
+                text: 'Strings',
+                children: []
+            }, {
+                route: 'trees',
+                text: 'Trees',
+                children: []
+            }]
         }, {
             route: 'algorithms',
             text: 'Algorithms',
@@ -96,6 +140,22 @@ export const learnTree = {
                     route: 'datatypes',
                     text: 'Datatypes',
                     slug: 'java-datatypes'
+                }, {
+                    route: 'lambdas-closures',
+                    text: 'Lambdas/closures',
+                    slug: 'java-lambdas-closures'
+                }, {
+                    route: 'pros-cons',
+                    text: 'Pros/cons',
+                    slug: 'java-pros-cons'
+                }, {
+                    route: 'quick-questions',
+                    text: 'Quick questions',
+                    slug: 'java-quick-questions'
+                }, {
+                    route: 'sort',
+                    text: 'Sorting',
+                    slug: 'java-sort'
                 }]
             }]
         }, {
