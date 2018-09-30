@@ -2,6 +2,7 @@ import React from 'react'
 import Button from "@app/components/Button";
 import { Link } from "react-router-dom";
 import { ButtonProps } from "@material-ui/core/Button";
+import styled from "styled-components";
 
 interface LinkButtonProps extends ButtonProps {
     innerRef?: (instance: any) => void,
@@ -12,6 +13,18 @@ interface LinkButtonProps extends ButtonProps {
 interface LinkButtonListProps {
     links: LinkButtonProps[]
 }
+
+const StyledButtonContainer = styled.span`
+  margin: 1em 0;
+`;
+
+const StyledLearnButtons = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+`;
 
 const ButtonLink: React.SFC<LinkButtonProps> = props => <Link to={props.to} {...props} />;
 
@@ -25,9 +38,13 @@ export default class LinkButtonList extends React.Component<LinkButtonListProps,
         );
 
         return (
-            <div>
-                {this.props.links.map(p => <LearnButton text={p.text} to={p.to} key={p.to}/>)}
-            </div>
+            <StyledLearnButtons>
+                {this.props.links.map(p => (
+                    <StyledButtonContainer>
+                        <LearnButton text={p.text} to={p.to} key={p.to}/>
+                    </StyledButtonContainer>
+                ))}
+            </StyledLearnButtons>
         )
     }
 }

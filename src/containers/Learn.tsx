@@ -7,6 +7,7 @@ interface Data {
     node: LearnTree
 }
 
+
 export default withRouteData((data: Data) => {
     const tree = data.node;
     const links = tree.children.map(child => ({text: child.text, to: `${tree.fullPath}/${child.route}`}));
