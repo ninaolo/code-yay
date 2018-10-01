@@ -15,7 +15,7 @@ Perhaps you have visited the [Telldus API documentation](http://api.telldus.com/
 
 I'll show you the basic requests which can be done and also how you could implement that in NodeJS. We have a few endpoints to choose from.
 
-``` bash
+```bash
 https://api.telldus.com/json/devices/list
 https://api.telldus.com/json/device/info?id=12345
 https://api.telldus.com/json/sensors/list
@@ -26,7 +26,7 @@ https://api.telldus.com/json/events/list
 
 But first, let's start a little NodeJS application.
 
-``` bash
+```bash
 mkdir my-telldus-app
 cd my-telldus-app
 npm init
@@ -49,6 +49,7 @@ app.use(require('./api'));
 app.listen(8080);
 console.log("App listening on port 8080");
 ```
+
 ### Authenticating with OAuth
 Did you see that we required `"./api.js"` there? We added that file before. That's where we'll write our backend API routes, so that these can be queried by our frontend later.
 

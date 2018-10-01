@@ -6,6 +6,7 @@ import Prism from "prismjs";
 import "prismjs/themes/prism.css"
 import styled from "styled-components";
 import "prismjs/components/prism-java";
+import "prismjs/components/prism-bash";
 
 interface Props {
     content: string
