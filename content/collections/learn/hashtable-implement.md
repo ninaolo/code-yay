@@ -17,8 +17,6 @@ probing is faster due to cache locality.
 b.  Quadratic probing reduces cluster size, and this is good for speed, if you have problems with
 collisions. If you don’t, then it’s slower.
 
-
-
 *Power-of-two vs. prime size*
 
 a.  Prime table size spreads out the keys more evenly in the table which avoids clustering. Clustering makes
@@ -28,7 +26,7 @@ b.  Power-of-two table size does not spread out as good as a prime table with a 
 a good one will spread well anyway, and we can avoid using modulo operations (expensive) and use a cheaper
 operation (bit mask).
 
-```
+```java
 /*
  * A power-of-two hashtable using linear probing.
  */
