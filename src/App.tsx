@@ -26,13 +26,6 @@ const AppStyles = styled.div`
   img {
     max-width: 100%;
   }
-  pre {
-    background: #f4f4f4;
-    padding: .8em;
-    overflow: auto;
-    border-radius: 7px;
-    margin: 35px 0;
-  }
 `;
 
 const Navbar = styled.nav`
@@ -65,7 +58,6 @@ const App = () => (
                 </MainContent>
             </AppStyles>
         </MuiThemeProvider>
-        
     </Router>
 );
 

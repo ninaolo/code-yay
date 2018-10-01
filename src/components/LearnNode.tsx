@@ -1,9 +1,9 @@
 import React from "react";
 import { withRouteData } from 'react-static'
 // @ts-ignore
-import convert from 'htmr'
 import { Node } from '@app/content/learn'
 import { hot } from "react-hot-loader";
+import MarkdownContent from "@app/components/MarkdownContent";
 
 interface LearnNode {
     node: Node
@@ -66,11 +66,7 @@ const LearnNode = withRouteData((learnNode: LearnNode) => {
 
     const getImplementation = () => {
         if (node.content && node.content.contents) {
-            return (
-                <div>
-                    {convert(node.content.contents)}
-                </div>
-            )
+            return (<MarkdownContent content={node.content.contents}/>)
         }
         return ""
     };
