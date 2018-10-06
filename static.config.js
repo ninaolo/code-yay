@@ -69,6 +69,10 @@ export default {
                 children: learnTree.children.map(node => (getRoutesFromNode(node, '/learn', learnPostsBySlug))),
             },
             {
+                path: '/interview-prep',
+                component: 'src/containers/InterviewPrep',
+            },
+            {
                 path: '/blog',
                 component: 'src/containers/Blog',
                 getData: () => ({
