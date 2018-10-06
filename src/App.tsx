@@ -1,10 +1,11 @@
 import React from 'react'
-import { Router, Link } from 'react-static'
+import { Router } from 'react-static'
 import styled, { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
 import Routes from 'react-static-routes'
 import theme from 'components/theme'
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
+import Navbar from "@app/components/Navbar";
 
 injectGlobal`
   body {
@@ -28,13 +29,9 @@ const AppStyles = styled.div`
   }
 `;
 
-const Navbar = styled.nav`
-  width: 100%;
-  background: #39ae7f;
+const StyledNavbar = styled.div`
   a, span {
     color: white;
-    padding: 1rem;
-    display: inline-block;
   }
 `;
 
@@ -46,13 +43,9 @@ const App = () => (
     <Router>
         <MuiThemeProvider theme={theme}>
             <AppStyles>
-                <Navbar>
-                    <Link exact to="/">code &bull; yay</Link>
-                    <span>|</span>
-                    <Link to="/about">About</Link>
-                    <Link to="/blog">Blog</Link>
-                    <Link to="/interview-prep">Interview prep</Link>
-                </Navbar>
+                <StyledNavbar>
+                    <Navbar/>
+                </StyledNavbar>
                 <MainContent>
                     <Routes/>
                 </MainContent>

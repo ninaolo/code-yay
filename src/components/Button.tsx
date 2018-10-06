@@ -15,6 +15,7 @@ const StyledButton = styled(MuiButton) <AppButtonProps>`
     width: ${props => props.box ? '200px' : 'inherit'};
     text-transform: none;
     box-shadow: none;
+    color: white;
   }
 `;
 
