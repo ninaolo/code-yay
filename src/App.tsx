@@ -51,7 +51,7 @@ const App = () => (
                     <span>|</span>
                     <Link to="/about">About</Link>
                     <Link to="/blog">Blog</Link>
-                    <Link to="/learn">Learn</Link>
+                    <Link to="/interview-prep">Interview prep</Link>
                 </Navbar>
                 <MainContent>
                     <Routes/>
