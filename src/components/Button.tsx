@@ -2,13 +2,13 @@ import * as React from 'react';
 import MuiButton, { ButtonProps } from '@material-ui/core/Button';
 import styled from 'styled-components';
 
-interface IProps extends ButtonProps {
+export interface AppButtonProps extends ButtonProps {
     innerRef?: (instance: any) => void,
     round?: boolean,
     box?: boolean
 }
 
-const StyledButton = styled(MuiButton) <IProps>`
+const StyledButton = styled(MuiButton) <AppButtonProps>`
   && {
     border-radius: ${props => (props.round ? '1.5rem' : '0')};
     padding: ${props => props.box ? '3rem' : '.75rem 3rem'};
@@ -18,7 +18,7 @@ const StyledButton = styled(MuiButton) <IProps>`
   }
 `;
 
-const Button: React.SFC<IProps> = props => (
+const Button: React.SFC<AppButtonProps> = props => (
     <StyledButton {...props} />
 );
 

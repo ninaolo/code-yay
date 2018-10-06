@@ -1,14 +1,7 @@
 import React from 'react'
 import Button from "@app/components/Button";
-import { Link } from "react-router-dom";
-import { ButtonProps } from "@material-ui/core/Button";
 import styled from "styled-components";
-
-interface LinkButtonProps extends ButtonProps {
-    innerRef?: (instance: any) => void,
-    text: string,
-    to: string,
-}
+import { ButtonLink, LinkButtonProps } from "@app/components/LinkButton";
 
 interface LinkButtonListProps {
     links: LinkButtonProps[]
@@ -25,8 +18,6 @@ const StyledLearnButtons = styled.div`
   align-content: space-evenly;
   flex-wrap: wrap;
 `;
-
-const ButtonLink: React.SFC<LinkButtonProps> = props => <Link to={props.to} {...props} />;
 
 export default class LinkButtonList extends React.Component<LinkButtonListProps, {}> {
 
