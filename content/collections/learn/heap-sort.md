@@ -17,7 +17,7 @@ public class Codeyay {
     public static void heapSort(Comparable[] array) {
         int n = array.length;
 
-        // STEP 1: Build heap bottom-up (begin at lowest level with children) --> O(N).
+        // STEP 1: build heap bottom-up (begin at lowest level with children) --> O(N).
         for (int i = n / 2 - 1; i >= 0; i--) {
             heapify(array, i, n);
         }
