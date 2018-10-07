@@ -2,8 +2,8 @@
   "errors": [],
   "warnings": [],
   "version": "3.12.0",
-  "hash": "279679c8a05d2815f952",
-  "time": 10008,
+  "hash": "9dd9b74e29b9749fcef5",
+  "time": 11012,
   "publicPath": "https://ninaolo.github.io/code-yay/",
   "assetsByChunkName": {
     "src/containers/Post": "templates/src/containers/Post.f8e49633.js",
@@ -14,9 +14,9 @@
     "src/containers/InterviewPrep": "templates/src/containers/InterviewPrep.fb037ef9.js",
     "src/containers/Blog": "templates/src/containers/Blog.7e98373e.js",
     "main": [
-      "main.73dea303.js",
-      "styles.279679c8.css",
-      "styles.279679c8.css.map"
+      "main.56125c5d.js",
+      "styles.9dd9b74e.css",
+      "styles.9dd9b74e.css.map"
     ],
     "bootstrap": "bootstrap.85a21347.js"
   },
@@ -99,8 +99,8 @@
       "emitted": true
     },
     {
-      "name": "main.73dea303.js",
-      "size": 484268,
+      "name": "main.56125c5d.js",
+      "size": 484406,
       "chunks": [
         7
       ],
@@ -122,7 +122,7 @@
       "emitted": true
     },
     {
-      "name": "styles.279679c8.css",
+      "name": "styles.9dd9b74e.css",
       "size": 1795,
       "chunks": [
         7
@@ -133,7 +133,7 @@
       "emitted": true
     },
     {
-      "name": "styles.279679c8.css.map",
+      "name": "styles.9dd9b74e.css.map",
       "size": 96,
       "chunks": [
         7
@@ -153,9 +153,9 @@
       ],
       "assets": [
         "bootstrap.85a21347.js",
-        "main.73dea303.js",
-        "styles.279679c8.css",
-        "styles.279679c8.css.map"
+        "main.56125c5d.js",
+        "styles.9dd9b74e.css",
+        "styles.9dd9b74e.css.map"
       ],
       "isOverSizeLimit": true
     }
@@ -1498,16 +1498,16 @@
       "initial": true,
       "entry": false,
       "extraAsync": false,
-      "size": 1127484,
+      "size": 1127634,
       "names": [
         "main"
       ],
       "files": [
-        "main.73dea303.js",
-        "styles.279679c8.css",
-        "styles.279679c8.css.map"
+        "main.56125c5d.js",
+        "styles.9dd9b74e.css",
+        "styles.9dd9b74e.css.map"
       ],
-      "hash": "73dea3032a3f1a9dc59c",
+      "hash": "56125c5dda6c3b2c3b01",
       "parents": [
         8
       ],
@@ -5895,9 +5895,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/Users/Nina/git/code-yay/node_modules/history/createHashHistory.js",
-          "issuerId": 186,
-          "issuerName": "./node_modules/history/createHashHistory.js",
+          "issuer": "/Users/Nina/git/code-yay/node_modules/history/createBrowserHistory.js",
+          "issuerId": 184,
+          "issuerName": "./node_modules/history/createBrowserHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -6900,9 +6900,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/BrowserRouter.js",
-          "issuerId": 127,
-          "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
+          "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/HashRouter.js",
+          "issuerId": 133,
+          "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -10510,9 +10510,9 @@
             7
           ],
           "assets": [],
-          "issuer": "/Users/Nina/git/code-yay/node_modules/history/createHashHistory.js",
-          "issuerId": 186,
-          "issuerName": "./node_modules/history/createHashHistory.js",
+          "issuer": "/Users/Nina/git/code-yay/node_modules/history/createBrowserHistory.js",
+          "issuerId": 184,
+          "issuerName": "./node_modules/history/createBrowserHistory.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -12196,7 +12196,7 @@
           "name": "./src/App.tsx",
           "index": 8,
           "index2": 355,
-          "size": 2740,
+          "size": 2890,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -12226,7 +12226,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 1,
-          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  body {\\n    font-family: Lato;\\n    font-weight: 400;\\n    letter-spacing: 0.3px;\\n    line-height: 1.5;\\n    font-size: 15px;\\n    margin: 0;\\n    padding: 0;\\n    color: ', '\\n  }\\n'], ['\\n  body {\\n    font-family: Lato;\\n    font-weight: 400;\\n    letter-spacing: 0.3px;\\n    line-height: 1.5;\\n    font-size: 15px;\\n    margin: 0;\\n    padding: 0;\\n    color: ', '\\n  }\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _reactHotLoader = require('react-hot-loader');\n\nvar _reactStaticRoutes = require('react-static-routes');\n\nvar _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);\n\nvar _theme = require('components/theme');\n\nvar _theme2 = _interopRequireDefault(_theme);\n\nvar _MuiThemeProvider = require('@material-ui/core/styles/MuiThemeProvider');\n\nvar _MuiThemeProvider2 = _interopRequireDefault(_MuiThemeProvider);\n\nvar _Navbar = require('@app/components/Navbar');\n\nvar _Navbar2 = _interopRequireDefault(_Navbar);\n\nvar _components = require('@app/components');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\n(0, _styledComponents.injectGlobal)(_templateObject, _components.colors.darkGrey);\nvar AppStyles = _styledComponents2.default.div.withConfig({\n  displayName: 'App__AppStyles',\n  componentId: 'nie0ws-0'\n})(['a{text-decoration:none;color:#704f56;font-weight:bold;}img{max-width:100%;}h1,h2,h3,h4,h5{color:', ';}'], _components.colors.black);\nvar StyledNavbar = _styledComponents2.default.div.withConfig({\n  displayName: 'App__StyledNavbar',\n  componentId: 'nie0ws-1'\n})(['a,span{color:white;font-family:Lato;}']);\nvar MainContent = _styledComponents2.default.div.withConfig({\n  displayName: 'App__MainContent',\n  componentId: 'nie0ws-2'\n})(['padding:3% 5%;']);\nvar App = function App() {\n  return _react2.default.createElement(_reactStatic.Router, null, _react2.default.createElement(_MuiThemeProvider2.default, { theme: _theme2.default }, _react2.default.createElement(AppStyles, null, _react2.default.createElement(StyledNavbar, null, _react2.default.createElement(_Navbar2.default, null)), _react2.default.createElement(MainContent, null, _react2.default.createElement(_reactStaticRoutes2.default, null)))));\n};\nexports.default = (0, _reactHotLoader.hot)(module)(App);"
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  body {\\n    font-family: Lato;\\n    font-weight: 400;\\n    letter-spacing: 0.3px;\\n    line-height: 1.5;\\n    font-size: 15px;\\n    margin: 0;\\n    padding: 0;\\n    color: ', '\\n  }\\n'], ['\\n  body {\\n    font-family: Lato;\\n    font-weight: 400;\\n    letter-spacing: 0.3px;\\n    line-height: 1.5;\\n    font-size: 15px;\\n    margin: 0;\\n    padding: 0;\\n    color: ', '\\n  }\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _reactHotLoader = require('react-hot-loader');\n\nvar _reactStaticRoutes = require('react-static-routes');\n\nvar _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);\n\nvar _theme = require('components/theme');\n\nvar _theme2 = _interopRequireDefault(_theme);\n\nvar _MuiThemeProvider = require('@material-ui/core/styles/MuiThemeProvider');\n\nvar _MuiThemeProvider2 = _interopRequireDefault(_MuiThemeProvider);\n\nvar _Navbar = require('@app/components/Navbar');\n\nvar _Navbar2 = _interopRequireDefault(_Navbar);\n\nvar _components = require('@app/components');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\n(0, _styledComponents.injectGlobal)(_templateObject, _components.colors.darkGrey);\nvar AppStyles = _styledComponents2.default.div.withConfig({\n  displayName: 'App__AppStyles',\n  componentId: 'nie0ws-0'\n})(['a{text-decoration:none;color:#704f56;font-weight:bold;}img{max-width:100%;}h1,h2,h3,h4,h5{color:', ';}'], _components.colors.black);\nvar StyledNavbar = _styledComponents2.default.div.withConfig({\n  displayName: 'App__StyledNavbar',\n  componentId: 'nie0ws-1'\n})(['a,span{color:white;font-family:Lato;}']);\nvar MainContent = _styledComponents2.default.div.withConfig({\n  displayName: 'App__MainContent',\n  componentId: 'nie0ws-2'\n})(['padding:3% 5%;p > code{background:', ';padding:.1em .5em;border-radius:.3em;white-space:normal;font-family:Lato;letter-spacing:0.8px;}'], _components.colors.lightGrey);\nvar App = function App() {\n  return _react2.default.createElement(_reactStatic.Router, null, _react2.default.createElement(_MuiThemeProvider2.default, { theme: _theme2.default }, _react2.default.createElement(AppStyles, null, _react2.default.createElement(StyledNavbar, null, _react2.default.createElement(_Navbar2.default, null)), _react2.default.createElement(MainContent, null, _react2.default.createElement(_reactStaticRoutes2.default, null)))));\n};\nexports.default = (0, _reactHotLoader.hot)(module)(App);"
         },
         {
           "id": 127,
@@ -25181,9 +25181,9 @@
         7
       ],
       "assets": [],
-      "issuer": "/Users/Nina/git/code-yay/node_modules/history/createHashHistory.js",
-      "issuerId": 186,
-      "issuerName": "./node_modules/history/createHashHistory.js",
+      "issuer": "/Users/Nina/git/code-yay/node_modules/history/createBrowserHistory.js",
+      "issuerId": 184,
+      "issuerName": "./node_modules/history/createBrowserHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -26186,9 +26186,9 @@
         7
       ],
       "assets": [],
-      "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/BrowserRouter.js",
-      "issuerId": 127,
-      "issuerName": "./node_modules/react-router-dom/es/BrowserRouter.js",
+      "issuer": "/Users/Nina/git/code-yay/node_modules/react-router-dom/es/HashRouter.js",
+      "issuerId": 133,
+      "issuerName": "./node_modules/react-router-dom/es/HashRouter.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -29796,9 +29796,9 @@
         7
       ],
       "assets": [],
-      "issuer": "/Users/Nina/git/code-yay/node_modules/history/createHashHistory.js",
-      "issuerId": 186,
-      "issuerName": "./node_modules/history/createHashHistory.js",
+      "issuer": "/Users/Nina/git/code-yay/node_modules/history/createBrowserHistory.js",
+      "issuerId": 184,
+      "issuerName": "./node_modules/history/createBrowserHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -31811,7 +31811,7 @@
       "name": "./src/App.tsx",
       "index": 8,
       "index2": 355,
-      "size": 2740,
+      "size": 2890,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -31841,7 +31841,7 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 1,
-      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  body {\\n    font-family: Lato;\\n    font-weight: 400;\\n    letter-spacing: 0.3px;\\n    line-height: 1.5;\\n    font-size: 15px;\\n    margin: 0;\\n    padding: 0;\\n    color: ', '\\n  }\\n'], ['\\n  body {\\n    font-family: Lato;\\n    font-weight: 400;\\n    letter-spacing: 0.3px;\\n    line-height: 1.5;\\n    font-size: 15px;\\n    margin: 0;\\n    padding: 0;\\n    color: ', '\\n  }\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _reactHotLoader = require('react-hot-loader');\n\nvar _reactStaticRoutes = require('react-static-routes');\n\nvar _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);\n\nvar _theme = require('components/theme');\n\nvar _theme2 = _interopRequireDefault(_theme);\n\nvar _MuiThemeProvider = require('@material-ui/core/styles/MuiThemeProvider');\n\nvar _MuiThemeProvider2 = _interopRequireDefault(_MuiThemeProvider);\n\nvar _Navbar = require('@app/components/Navbar');\n\nvar _Navbar2 = _interopRequireDefault(_Navbar);\n\nvar _components = require('@app/components');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\n(0, _styledComponents.injectGlobal)(_templateObject, _components.colors.darkGrey);\nvar AppStyles = _styledComponents2.default.div.withConfig({\n  displayName: 'App__AppStyles',\n  componentId: 'nie0ws-0'\n})(['a{text-decoration:none;color:#704f56;font-weight:bold;}img{max-width:100%;}h1,h2,h3,h4,h5{color:', ';}'], _components.colors.black);\nvar StyledNavbar = _styledComponents2.default.div.withConfig({\n  displayName: 'App__StyledNavbar',\n  componentId: 'nie0ws-1'\n})(['a,span{color:white;font-family:Lato;}']);\nvar MainContent = _styledComponents2.default.div.withConfig({\n  displayName: 'App__MainContent',\n  componentId: 'nie0ws-2'\n})(['padding:3% 5%;']);\nvar App = function App() {\n  return _react2.default.createElement(_reactStatic.Router, null, _react2.default.createElement(_MuiThemeProvider2.default, { theme: _theme2.default }, _react2.default.createElement(AppStyles, null, _react2.default.createElement(StyledNavbar, null, _react2.default.createElement(_Navbar2.default, null)), _react2.default.createElement(MainContent, null, _react2.default.createElement(_reactStaticRoutes2.default, null)))));\n};\nexports.default = (0, _reactHotLoader.hot)(module)(App);"
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  body {\\n    font-family: Lato;\\n    font-weight: 400;\\n    letter-spacing: 0.3px;\\n    line-height: 1.5;\\n    font-size: 15px;\\n    margin: 0;\\n    padding: 0;\\n    color: ', '\\n  }\\n'], ['\\n  body {\\n    font-family: Lato;\\n    font-weight: 400;\\n    letter-spacing: 0.3px;\\n    line-height: 1.5;\\n    font-size: 15px;\\n    margin: 0;\\n    padding: 0;\\n    color: ', '\\n  }\\n']);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactStatic = require('react-static');\n\nvar _styledComponents = require('styled-components');\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nvar _reactHotLoader = require('react-hot-loader');\n\nvar _reactStaticRoutes = require('react-static-routes');\n\nvar _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);\n\nvar _theme = require('components/theme');\n\nvar _theme2 = _interopRequireDefault(_theme);\n\nvar _MuiThemeProvider = require('@material-ui/core/styles/MuiThemeProvider');\n\nvar _MuiThemeProvider2 = _interopRequireDefault(_MuiThemeProvider);\n\nvar _Navbar = require('@app/components/Navbar');\n\nvar _Navbar2 = _interopRequireDefault(_Navbar);\n\nvar _components = require('@app/components');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\n(0, _styledComponents.injectGlobal)(_templateObject, _components.colors.darkGrey);\nvar AppStyles = _styledComponents2.default.div.withConfig({\n  displayName: 'App__AppStyles',\n  componentId: 'nie0ws-0'\n})(['a{text-decoration:none;color:#704f56;font-weight:bold;}img{max-width:100%;}h1,h2,h3,h4,h5{color:', ';}'], _components.colors.black);\nvar StyledNavbar = _styledComponents2.default.div.withConfig({\n  displayName: 'App__StyledNavbar',\n  componentId: 'nie0ws-1'\n})(['a,span{color:white;font-family:Lato;}']);\nvar MainContent = _styledComponents2.default.div.withConfig({\n  displayName: 'App__MainContent',\n  componentId: 'nie0ws-2'\n})(['padding:3% 5%;p > code{background:', ';padding:.1em .5em;border-radius:.3em;white-space:normal;font-family:Lato;letter-spacing:0.8px;}'], _components.colors.lightGrey);\nvar App = function App() {\n  return _react2.default.createElement(_reactStatic.Router, null, _react2.default.createElement(_MuiThemeProvider2.default, { theme: _theme2.default }, _react2.default.createElement(AppStyles, null, _react2.default.createElement(StyledNavbar, null, _react2.default.createElement(_Navbar2.default, null)), _react2.default.createElement(MainContent, null, _react2.default.createElement(_reactStaticRoutes2.default, null)))));\n};\nexports.default = (0, _reactHotLoader.hot)(module)(App);"
     },
     {
       "id": 127,

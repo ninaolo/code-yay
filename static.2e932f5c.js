@@ -859,7 +859,7 @@ var StyledNavbar = _styledComponents2.default.div.withConfig({
 var MainContent = _styledComponents2.default.div.withConfig({
   displayName: 'App__MainContent',
   componentId: 'nie0ws-2'
-})(['padding:3% 5%;']);
+})(['padding:3% 5%;p > code{background:', ';padding:.1em .5em;border-radius:.3em;white-space:normal;font-family:Lato;letter-spacing:0.8px;}'], _components.colors.lightGrey);
 var App = function App() {
   return _react2.default.createElement(_reactStatic.Router, null, _react2.default.createElement(_MuiThemeProvider2.default, { theme: _theme2.default }, _react2.default.createElement(AppStyles, null, _react2.default.createElement(StyledNavbar, null, _react2.default.createElement(_Navbar2.default, null)), _react2.default.createElement(MainContent, null, _react2.default.createElement(_reactStaticRoutes2.default, null)))));
 };
@@ -2068,4 +2068,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.97f0fb6b.js.map
+//# sourceMappingURL=static.2e932f5c.js.map
