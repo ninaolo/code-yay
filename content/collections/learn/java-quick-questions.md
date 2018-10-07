@@ -5,8 +5,8 @@ slug: java-quick-questions
 
 ### What is the difference between creating a String with new() or with a String literal ("")?
 
-new() --> heap
-String literal --> String pool
+* new() --> heap
+* String literal --> String pool
 
 The String pool is a part of the heap. Strings there are re-used.
 
