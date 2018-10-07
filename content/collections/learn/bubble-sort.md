@@ -3,6 +3,10 @@ title: Bubble sort
 slug: bubble-sort
 what: A very simple sorting algorithm using double for-loops. It's slow and has a quite naïve approach.
 how: For every element... | For every pair of elements... | If left is greater than right - swap
+bestTime: O(N) when already sorted
+worstTime: O(N)^2 because of double for loops
+averageTime: O(N)^2
+space: O(1)
 ---
 
 ### Implementation
