@@ -1,6 +1,6 @@
-import React from 'react'
-import { withRouteData, Link } from 'react-static'
-import { hot } from 'react-hot-loader'
+import React from "react"
+import { withRouteData, Link } from "react-static"
+import { hot } from "react-hot-loader"
 
 const prettyDate = date => {
     date = new Date(date)
@@ -10,7 +10,7 @@ const prettyDate = date => {
 
 const Blog = withRouteData(({ posts }) => (
     <div>
-        <h1>It's blog time.</h1>
+        <h1>It"s blog time.</h1>
         <br />
         All Posts:
         <ul>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 import LinkButtonList from "@app/components/LinkButtonList";
 import { withRouteData } from "react-static";
 import { LearnTree } from "@app/content/learn";
