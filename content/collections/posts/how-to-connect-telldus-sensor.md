@@ -44,7 +44,7 @@ const express = require("express");
 const app = express();
 
 // This is the API.
-app.use(require('./api'));
+app.use(require("./api"));
 
 app.listen(8080);
 console.log("App listening on port 8080");
@@ -77,7 +77,7 @@ function getOauth() {
     return new OAuth.OAuth(
         base + "/oauth/requestToken",
         base + "/oauth/accessToken",
-        publicKey, privateKey, '1.0', null, 'HMAC-SHA1');
+        publicKey, privateKey, "1.0", null, "HMAC-SHA1");
 }
 ```
 
