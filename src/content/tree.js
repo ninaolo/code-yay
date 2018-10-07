@@ -1,159 +1,159 @@
 export const learnTree = {
-    route: 'learn',
-    text: 'Learn',
-    fullPath: '/learn',
+    route: "learn",
+    text: "Learn",
+    fullPath: "/learn",
     children: [
         {
-            route: 'sorting',
-            text: 'Sorting',
+            route: "sorting",
+            text: "Sorting",
             children: [{
-                text: 'Bubble sort',
-                slug: 'bubble-sort',
+                text: "Bubble sort",
+                slug: "bubble-sort",
             }, {
-                text: 'Heap sort',
-                slug: 'heap-sort'
+                text: "Heap sort",
+                slug: "heap-sort"
             }, {
-                text: 'Insertion sort',
-                slug: 'insertion-sort'
+                text: "Insertion sort",
+                slug: "insertion-sort"
             }, {
-                text: 'Merge sort',
-                slug: 'merge-sort'
+                text: "Merge sort",
+                slug: "merge-sort"
             }, {
-                text: 'Quick sort',
-                slug: 'quick-sort'
+                text: "Quick sort",
+                slug: "quick-sort"
             }]
         },
         {
-            route: 'problems',
-            text: 'Problems',
+            route: "problems",
+            text: "Problems",
             children: [{
-                route: 'arrays',
-                text: 'Arrays',
+                route: "arrays",
+                text: "Arrays",
                 children: [{
-                    text: 'Spiral',
-                    slug: 'arrays-spiral'
+                    text: "Spiral",
+                    slug: "arrays-spiral"
                 }, {
-                    text: 'Sum of two',
-                    slug: 'arrays-sum-of-two'
+                    text: "Sum of two",
+                    slug: "arrays-sum-of-two"
                 }]
             }, {
-                route: 'hashtable',
-                text: 'Hashtable',
+                route: "hashtable",
+                text: "Hashtable",
                 children: [{
-                    text: 'Implement',
-                    slug: 'hashtable-implement'
+                    text: "Implement",
+                    slug: "hashtable-implement"
                 }]
             }, {
-                route: 'linked-list',
-                text: 'Linked list',
+                route: "linked-list",
+                text: "Linked list",
                 children: [{
-                    text: 'Cycle',
-                    slug: 'linked-list-cycle'
+                    text: "Cycle",
+                    slug: "linked-list-cycle"
                 }, {
-                    text: 'Delete',
-                    slug: 'linked-list-delete'
+                    text: "Delete",
+                    slug: "linked-list-delete"
                 }, {
-                    text: 'Merge',
-                    slug: 'linked-list-merge'
+                    text: "Merge",
+                    slug: "linked-list-merge"
                 }]
             }, {
-                route: 'strings',
-                text: 'Strings',
+                route: "strings",
+                text: "Strings",
                 children: [{
-                    text: 'Anagram',
-                    slug: 'strings-anagram'
+                    text: "Anagram",
+                    slug: "strings-anagram"
                 }, {
-                    text: 'Palindrome',
-                    slug: 'strings-palindrome'
+                    text: "Palindrome",
+                    slug: "strings-palindrome"
                 }, {
-                    text: 'Unique chars',
-                    slug: 'strings-unique-chars'
+                    text: "Unique chars",
+                    slug: "strings-unique-chars"
                 }]
             }, {
-                route: 'trees',
-                text: 'Trees',
+                route: "trees",
+                text: "Trees",
                 children: [{
-                    text: 'BST balanced',
-                    slug: 'trees-bst-balanced'
+                    text: "BST balanced",
+                    slug: "trees-bst-balanced"
                 }]
             }]
         }, {
-            route: 'algorithms',
-            text: 'Algorithms',
+            route: "algorithms",
+            text: "Algorithms",
             children: [{
-                text: 'A-star',
-                slug: 'a-star'
+                text: "A-star",
+                slug: "a-star"
             }, {
-                text: 'BFS graph',
-                slug: 'bfs-graph'
+                text: "BFS graph",
+                slug: "bfs-graph"
             }, {
-                text: 'DFS graph',
-                slug: 'dfs-graph'
+                text: "DFS graph",
+                slug: "dfs-graph"
             }, {
-                text: 'Dijkstras',
-                slug: 'dijkstras'
+                text: "Dijkstras",
+                slug: "dijkstras"
             }, {
-                text: 'BST traversal',
-                slug: 'bst-traversal'
+                text: "BST traversal",
+                slug: "bst-traversal"
             }, {
-                text: 'Topological sort',
-                slug: 'topological-sort'
+                text: "Topological sort",
+                slug: "topological-sort"
 
             }]
         }, {
-            route: 'concepts',
-            text: 'Concepts',
+            route: "concepts",
+            text: "Concepts",
             children: [{
-                text: 'Backtracking',
-                slug: 'backtracking'
+                text: "Backtracking",
+                slug: "backtracking"
             }, {
-                text: 'Greedy',
-                slug: 'greedy'
+                text: "Greedy",
+                slug: "greedy"
             }, {
-                text: 'Memoization',
-                slug: 'memoization'
+                text: "Memoization",
+                slug: "memoization"
             }, {
-                text: 'Recursion',
-                slug: 'recursion'
+                text: "Recursion",
+                slug: "recursion"
             }, {
-                text: 'Tabulation',
-                slug: 'tabulation'
+                text: "Tabulation",
+                slug: "tabulation"
             }]
         }, {
-            route: 'languages',
-            text: 'Languages',
+            route: "languages",
+            text: "Languages",
             children: [{
-                route: 'java',
-                text: 'Java',
+                route: "java",
+                text: "Java",
                 children: [{
-                    text: 'Datatypes',
-                    slug: 'java-datatypes'
+                    text: "Datatypes",
+                    slug: "java-datatypes"
                 }, {
-                    text: 'Lambdas/closures',
-                    slug: 'java-lambdas-closures'
+                    text: "Lambdas/closures",
+                    slug: "java-lambdas-closures"
                 }, {
-                    text: 'Pros/cons',
-                    slug: 'java-pros-cons'
+                    text: "Pros/cons",
+                    slug: "java-pros-cons"
                 }, {
-                    text: 'Quick questions',
-                    slug: 'java-quick-questions'
+                    text: "Quick questions",
+                    slug: "java-quick-questions"
                 }, {
-                    text: 'Sorting',
-                    slug: 'java-sort'
+                    text: "Sorting",
+                    slug: "java-sort"
                 }]
             }]
         }, {
-            route: 'datastructures',
-            text: 'Datastructures',
+            route: "datastructures",
+            text: "Datastructures",
             children: [{
-                text: 'Binary tree',
-                slug: 'binary-tree'
+                text: "Binary tree",
+                slug: "binary-tree"
             }, {
-                text: 'Prefix tree',
-                slug: 'prefix-tree'
+                text: "Prefix tree",
+                slug: "prefix-tree"
             }, {
-                text: 'Splay',
-                slug: 'splay'
+                text: "Splay",
+                slug: "splay"
             }]
         }
     ]
