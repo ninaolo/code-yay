@@ -1,3 +1,5 @@
+import { hot } from "react-hot-loader";
+
 const Green = {
     50: "#39ae7f",
     100: "#39ae7f",
@@ -32,10 +34,28 @@ const LightGrey = {
     A700: "#f4f4f4",
 };
 
+const Yellow = {
+    50: "#fdb54c",
+    100: "#fdb54c",
+    200: "#fdb54c",
+    300: "#fdb54c",
+    400: "#fdb54c",
+    500: "#fdb54c",
+    600: "#fdb54c",
+    700: "#fdb54c",
+    800: "#fdb54c",
+    900: "#fdb54c",
+    A100: "#fdb54c",
+    A200: "#fdb54c",
+    A400: "#fdb54c",
+    A700: "#fdb54c",
+};
+
 const colors = {
     lightGrey: LightGrey,
     green: Green,
+    yellow: Yellow
 };
 
 
-export default colors
+export default hot(module)(colors)
