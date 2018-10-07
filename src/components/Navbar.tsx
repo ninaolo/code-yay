@@ -75,7 +75,7 @@ class Navbar extends React.Component {
                 <AppBar position="static">
                     <Toolbar>
                         <Typography variant="title" color="inherit" noWrap>
-                            <Link exact to="/interview-prep">code &bull; yay</Link>
+                            <Link exact to="/">code &bull; yay</Link>
                         </Typography>
 
                         <MiddleSpace/>

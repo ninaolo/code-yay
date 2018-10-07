@@ -47,13 +47,6 @@ export default {
 
         return [
             {
-                path: '/',
-                component: 'src/containers/Home',
-                getData: () => ({
-                    ...home,
-                }),
-            },
-            {
                 path: '/about',
                 component: 'src/containers/About',
                 getData: () => ({
@@ -69,7 +62,7 @@ export default {
                 children: learnTree.children.map(node => (getRoutesFromNode(node, '/learn', learnPostsBySlug))),
             },
             {
-                path: '/interview-prep',
+                path: '/',
                 component: 'src/containers/InterviewPrep',
             },
             {
