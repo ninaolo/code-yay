@@ -1,9 +1,9 @@
-import React from 'react'
-import { Router } from 'react-static'
-import styled, { injectGlobal } from 'styled-components'
-import { hot } from 'react-hot-loader'
-import Routes from 'react-static-routes'
-import theme from 'components/theme'
+import React from "react"
+import { Router } from "react-static"
+import styled, { injectGlobal } from "styled-components"
+import { hot } from "react-hot-loader"
+import Routes from "react-static-routes"
+import theme from "components/theme"
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 import Navbar from "@app/components/Navbar";
 import { colors } from "@app/components";
