@@ -21,6 +21,9 @@ export const learnTree = {
             }, {
                 text: "Quick sort",
                 slug: "quick-sort"
+            }, {
+                text: "Comparison",
+                slug: "sorting-comparison",
             }]
         },
         {
