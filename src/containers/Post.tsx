@@ -2,7 +2,7 @@ import React from "react";
 import { withRouteData, Link } from "react-static";
 import MarkdownContent from "@app/components/MarkdownContent";
 
-export default withRouteData(({post}) => (
+export default withRouteData(({ post }) => (
     <div>
         <Link to="/blog/">{"<"} Back</Link>
         <br />

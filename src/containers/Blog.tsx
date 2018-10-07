@@ -5,10 +5,10 @@ import { hot } from "react-hot-loader";
 const prettyDate = date => {
     date = new Date(date);
     const month = date.getMonth() + 1;
-    return `${date.getFullYear()}-${month.toString().padStart(2, "0")}-${date.getDate()}`
+    return `${date.getFullYear()}-${month.toString().padStart(2, "0")}-${date.getDate()}`;
 };
 
-const Blog = withRouteData(({ posts }) => (
+const Blog = withRouteData(({posts}) => (
     <div>
         <h1>It"s blog time.</h1>
         <br />
@@ -23,6 +23,6 @@ const Blog = withRouteData(({ posts }) => (
             ))}
         </ul>
     </div>
-))
+));
 
-export default hot(module)(Blog)
+export default hot(module)(Blog);

@@ -1,7 +1,7 @@
 import React from "react";
-import { withRouteData } from "react-static"
+import { withRouteData } from "react-static";
 // @ts-ignore
-import { Node } from "@app/content/learn"
+import { Node } from "@app/content/learn";
 import { hot } from "react-hot-loader";
 import MarkdownContent from "@app/components/MarkdownContent";
 
@@ -13,7 +13,7 @@ const LearnNode = withRouteData((learnNode: LearnNode) => {
     const node = learnNode.node;
 
     if (!node.content) {
-        return "Oops! No information found here."
+        return "Oops! No information found here.";
     }
 
     const getHow = () => {
@@ -23,13 +23,13 @@ const LearnNode = withRouteData((learnNode: LearnNode) => {
                     <h3>How?</h3>
                     <ul>
                         {node.content.how.split(" | ").map((h: string) => {
-                            return <li key={h}>{h}</li>
+                            return <li key={h}>{h}</li>;
                         })}
                     </ul>
                 </div>
-            )
+            );
         }
-        return ""
+        return "";
     };
 
     const getComplexity = () => {
@@ -44,9 +44,9 @@ const LearnNode = withRouteData((learnNode: LearnNode) => {
                         <li><b>Space: </b>{node.content.space}</li>
                     </ul>
                 </div>
-            )
+            );
         }
-        return ""
+        return "";
     };
 
     const getProsCons = () => {
@@ -59,16 +59,16 @@ const LearnNode = withRouteData((learnNode: LearnNode) => {
                         <li>Cons: {node.content.cons}</li>
                     </ul>
                 </div>
-            )
+            );
         }
-        return ""
+        return "";
     };
 
     const getImplementation = () => {
         if (node.content && node.content.contents) {
-            return (<MarkdownContent content={node.content.contents}/>)
+            return (<MarkdownContent content={node.content.contents}/>);
         }
-        return ""
+        return "";
     };
 
     const getWhat = () => {
@@ -78,9 +78,9 @@ const LearnNode = withRouteData((learnNode: LearnNode) => {
                     <h3>What?</h3>
                     <p>{node.content.what}</p>
                 </div>
-            )
+            );
         }
-        return ""
+        return "";
     };
 
     return (
@@ -99,4 +99,4 @@ const LearnNode = withRouteData((learnNode: LearnNode) => {
     );
 });
 
-export default hot(module)(LearnNode)
+export default hot(module)(LearnNode);
