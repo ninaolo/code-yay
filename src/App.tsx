@@ -44,7 +44,7 @@ const StyledNavbar = styled.div`
 
 const MainContent = styled.div`
   padding: 3% 5%;
-  code {
+  p > code {
     background: ${colors.lightGrey};
     padding: .1em .5em;
     border-radius: .3em;
