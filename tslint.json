@@ -7,6 +7,13 @@
     "tslint-config-airbnb"
   ],
   "rules": {
+    "space-within-parens": true,
+    "indent": [
+      true,
+      "spaces",
+      4
+    ],
+    "interface-name": false,
     "import-name": false,
     "jsx-boolean-value": false,
     "jsx-no-multiline-js": false,
