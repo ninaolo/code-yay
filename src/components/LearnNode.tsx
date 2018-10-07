@@ -55,8 +55,8 @@ const LearnNode = withRouteData((learnNode: LearnNode) => {
                 <div>
                     <h3>Pros/cons</h3>
                     <ul>
-                        <li>Pros:{node.content.pros}</li>
-                        <li>Cons:{node.content.cons}</li>
+                        <li>Pros: {node.content.pros}</li>
+                        <li>Cons: {node.content.cons}</li>
                     </ul>
                 </div>
             )
