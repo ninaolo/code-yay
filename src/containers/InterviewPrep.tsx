@@ -24,7 +24,7 @@ const InterviewPrep = () => (
             <p>Have a look at this awesome learning tool structured into different categories!</p>
         </div>
         <div>
-            <LinkButton round box to="/learn" text="Start learning"/>
+            <LinkButton color="secondary" round box to="/learn" text="Start learning"/>
         </div>
     </StyledInterviewPrep>
 

@@ -12,5 +12,8 @@ export interface LinkButtonProps extends ButtonProps, AppButtonProps {
 export const ButtonLink: React.SFC<LinkButtonProps> = props => <Link to={props.to} {...props} />;
 
 export const LinkButton: React.SFC<LinkButtonProps> = props => (
-    <Button color="primary" variant="contained" component={ButtonLink} {...props}>{props.text}</Button>
+    <Button color={props.color ? props.color : "primary"}
+            variant="contained"
+            component={ButtonLink} {...props}>{props.text}
+    </Button>
 );
