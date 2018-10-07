@@ -11,7 +11,7 @@ We must use memoization! If we try to compute the 50th fibonacci nr with the slo
 huge difference in running time.
 
 ```java
-public class Coderview {
+public class Codeyay {
     public static int fibonacci(int n) {
         return n < 2 ? n : fibonacci(n-1) + fibonacci(n-2);
     }
@@ -19,7 +19,7 @@ public class Coderview {
 ```
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     private static Map&lt;Integer, Long&gt; cache = new HashMap<>();
 

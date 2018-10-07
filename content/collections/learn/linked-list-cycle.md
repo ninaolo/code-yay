@@ -14,7 +14,7 @@ Go through list with fast and slow runner. Slow runner takes one node at a time,
 Complexity --> O(N) time and O(1) space.
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     public static boolean hasCycle(Node startNode) {
         Set&lt;Integer&gt; visited = new HashSet<>();
@@ -34,7 +34,7 @@ public class Coderview {
 ```
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     public static boolean hasCycle(Node startNode) {
         Node slow = startNode;

@@ -11,7 +11,7 @@ Difference = lambdas can't modify variables defined in the outer closure (such c
 ### Example of compile error ("Variable used in lambda expression should be final or effectively final"):
 
 ```java
-public class Coderview {
+public class Codeyay {
 
 private static Function&lt;Integer, Integer&gt; makeFunction() {
     int n = 0; // Outside the lambda scope.
@@ -33,7 +33,7 @@ class MyInt {
     int n = 0;
 }
 
-public class Coderview {
+public class Codeyay {
 
     private static Function&lt;Integer, Integer&gt; makeFunction() {
         final MyInt myInt = new MyInt(); // Outside the lambda scope.

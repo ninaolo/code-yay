@@ -12,7 +12,7 @@ space: O(N) for extra storage
 ### Implementation
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     private static void merge(Comparable[] left, Comparable[] right, Comparable[] list) {
 

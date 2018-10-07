@@ -18,7 +18,7 @@ We can only solve this with a more "ugly" solution - we'll swap Node values. If 
 NOTE: we must assume given node is not the tail.
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     public static Node delete(Node root, Node node) {
 
@@ -50,7 +50,7 @@ public class Coderview {
 ```
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     /**
      * Only handles nodes that aren't the tail.

@@ -8,7 +8,7 @@ how: For every element... | For every pair of elements... | If left is greater t
 ### Implementation
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     private static void swap(int iFirst, int iSecond, Comparable[] list) {
         Comparable tmp = list[iFirst];

@@ -21,7 +21,7 @@ Complexity --> O(2N) = O(N) time and O(1) space.
 ### Solution
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     public static boolean isAnagram(char[] first, char[] second) {
         if (first.length != second.length || first.length == 0) {
@@ -45,7 +45,7 @@ public class Coderview {
 ```
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     public static boolean isAnagram(char[] first, char[] second) {
         if (first.length != second.length || first.length == 0) {

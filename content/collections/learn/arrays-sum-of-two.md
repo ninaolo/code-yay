@@ -12,7 +12,7 @@ O(N) time + O(N) space for the HashMap.
 ### Solution
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     public static Optional&lt;int[]&gt; findSumIndices(int[] numbers, int sum) {
         Map&lt;Integer, Integer&gt; numToIndex = new HashMap<>();

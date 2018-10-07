@@ -26,7 +26,7 @@ There are different ways to represent a graph.
 ### Implementation
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     /**
      * Update the min-distances and predecessors on all vertices given a certain source vertex.

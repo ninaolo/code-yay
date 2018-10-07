@@ -16,7 +16,7 @@ Worst case is O(N) time (N = total nr of nodes) and best case O(1) (when first l
 Space is O(1).
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     public static Node merge(Node first, Node second) {
         if (first == null) {
@@ -52,7 +52,7 @@ public class Coderview {
 ```
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     public static Node merge(Node first, Node second) {
         if (first == null) {

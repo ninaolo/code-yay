@@ -24,7 +24,7 @@ Assume any value of Java char = 16 bits --> 2^16 different values. Store in a Bi
 Complexity --> O(N) time and O(1) space.
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     public static boolean uniqueChars(String string) {
         if (string.length() > 256) {
@@ -47,7 +47,7 @@ public class Coderview {
 ```
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     public static boolean uniqueChars(String string) {
         if (string.length() > 26) {
@@ -70,7 +70,7 @@ public class Coderview {
 ```
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     public static boolean uniqueChars(String string) {
         int assumedNrOfPossibleChars = 1 << 16; // 2^16

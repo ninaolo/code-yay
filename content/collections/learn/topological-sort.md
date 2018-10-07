@@ -14,7 +14,7 @@ averageTime: Same as DFS --> O(E + V).
 ### Implementation
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     /*
      * Topological sort for one entire DAG.

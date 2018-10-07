@@ -8,7 +8,7 @@ how: Recursively go through a binary tree. We have current, left and right node.
 ### Implementation
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     public static void preOrderTraversal(Node node) {
         if (node != null) {

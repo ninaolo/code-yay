@@ -9,7 +9,7 @@ O(N) time + O(N) space for path.
 ### Solution
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     public static int[] spiral(int[][] matrix) {
         int col = matrix.length / 2;

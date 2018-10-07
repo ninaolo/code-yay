@@ -12,7 +12,7 @@ space: O(1)
 ### Implementation
 
 ```java
-public class Coderview {
+public class Codeyay {
 
     public static void heapSort(Comparable[] array) {
         int n = array.length;
