@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import { hot } from "react-hot-loader";
 import styled from "styled-components";
 import { LinkButton } from "@app/components/LinkButton";
@@ -9,7 +9,6 @@ const StyledInterviewPrep = styled.div`
   align-items: center;
   text-align: center;
   justify-content: center;
-  
   div {
     padding: 1.5em 0;
   }
@@ -29,4 +28,4 @@ const InterviewPrep = () => (
 
 );
 
-export default hot(module)(InterviewPrep)
+export default hot(module)(InterviewPrep);

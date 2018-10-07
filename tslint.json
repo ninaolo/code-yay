@@ -12,7 +12,6 @@
     "jsx-no-multiline-js": false,
     "jsx-self-close": true,
     "jsx-space-before-trailing-slash": true,
-    "jsx-use-translation-function": true,
     "jsx-wrap-multiline": true,
     "max-line-length": false,
     "member-access": [
@@ -20,8 +19,7 @@
       "no-public"
     ],
     "no-implicit-dependencies": [
-      true,
-      "dev"
+      false
     ],
     "no-submodule-imports": false,
     "ordered-imports": false,
@@ -41,6 +39,10 @@
       "ban-keywords",
       "check-format",
       "allow-pascal-case"
+    ],
+    "quotemark": [
+      true,
+      "double"
     ]
   },
   "jsRules": {
@@ -55,10 +57,6 @@
     "member-access": [
       true,
       "no-public"
-    ],
-    "no-implicit-dependencies": [
-      true,
-      "dev"
     ],
     "no-submodule-imports": false,
     "ordered-imports": false,
