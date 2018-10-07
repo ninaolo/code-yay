@@ -20,9 +20,9 @@ slug: java-datatypes
 
 ### Int
 * 32 bit integer
-* Signed, two's complement
+* Signed, two's complement (last bit is a sign bit)
 * Min value: -2^31
-* Max value: 2^31 - 1
+* Max value: 2^31 - 1 = 2147483647
 
 ### Long
 * 64 bit integer
