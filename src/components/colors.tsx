@@ -17,23 +17,6 @@ const Green = {
     A700: "#39ae7f",
 };
 
-const LightGrey = {
-    50: "#f4f4f4",
-    100: "#f4f4f4",
-    200: "#f4f4f4",
-    300: "#f4f4f4",
-    400: "#f4f4f4",
-    500: "#f4f4f4",
-    600: "#f4f4f4",
-    700: "#f4f4f4",
-    800: "#f4f4f4",
-    900: "#f4f4f4",
-    A100: "#f4f4f4",
-    A200: "#f4f4f4",
-    A400: "#f4f4f4",
-    A700: "#f4f4f4",
-};
-
 const Yellow = {
     50: "#fdb54c",
     100: "#fdb54c",
@@ -52,10 +35,14 @@ const Yellow = {
 };
 
 const colors = {
-    lightGrey: LightGrey,
-    green: Green,
-    yellow: Yellow
+    theme: {
+        green: Green,
+        yellow: Yellow,
+    },
+    lightGrey: "#f4f4f4",
+    pink: "#e5ac9b",
+    darkGrey: "#4e4e4e",
+    black: "#1e1e1e"
 };
-
 
 export default hot(module)(colors)

@@ -3,8 +3,8 @@ import colors from "@app/components/colors";
 
 const theme = createMuiTheme({
     palette: {
-        primary: colors.green,
-        secondary: colors.yellow
+        primary: colors.theme.green,
+        secondary: colors.theme.yellow
     },
 });
 

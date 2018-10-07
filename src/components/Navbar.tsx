@@ -52,7 +52,6 @@ class Navbar extends React.Component {
         const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
         const links = [
-            <Link to="/interview-prep">Interview prep</Link>,
             <Link to="/blog">Blog</Link>,
             <Link to="/about">About</Link>,
         ];
@@ -76,7 +75,7 @@ class Navbar extends React.Component {
                 <AppBar position="static">
                     <Toolbar>
                         <Typography variant="title" color="inherit" noWrap>
-                            <Link exact to="/">code &bull; yay</Link>
+                            <Link exact to="/interview-prep">code &bull; yay</Link>
                         </Typography>
 
                         <MiddleSpace/>

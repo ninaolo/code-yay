@@ -16,6 +16,8 @@ const StyledButton = styled(MuiButton) <AppButtonProps>`
     text-transform: none;
     box-shadow: none;
     color: white;
+    font-family: Lato;
+    font-size: 15px;
   }
 `;
 

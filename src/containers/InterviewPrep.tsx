@@ -15,12 +15,11 @@ const StyledInterviewPrep = styled.div`
   }
 `;
 
-
 const InterviewPrep = () => (
     <StyledInterviewPrep>
         <div>
             <h1>Coding interview prep</h1>
-            <p>Prepping for a coding interview? Or just brushing up on your Computer Science skills?</p>
+            <p>Prepping for a <code>coding interview</code>? Or just brushing up on your Computer Science skills?</p>
             <p>Have a look at this awesome learning tool structured into different categories!</p>
         </div>
         <div>
