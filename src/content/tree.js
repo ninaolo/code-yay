@@ -30,8 +30,8 @@ export const learnTree = {
             route: 'problems',
             text: 'Problems',
             children: [{
-                text: "General",
-                slug: "problems-general"
+                text: 'General',
+                slug: 'problems-general'
             }, {
                 route: 'arrays',
                 text: 'Arrays',
@@ -160,6 +160,13 @@ export const learnTree = {
             }, {
                 text: 'Splay',
                 slug: 'splay'
+            }]
+        }, {
+            route: 'other',
+            text: 'Other',
+            children: [{
+                text: 'Bit operations',
+                slug: 'bit-operations'
             }]
         }
     ]
