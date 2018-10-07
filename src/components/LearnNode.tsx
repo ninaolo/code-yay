@@ -1,7 +1,7 @@
 import React from "react";
-import { withRouteData } from 'react-static'
+import { withRouteData } from "react-static"
 // @ts-ignore
-import { Node } from '@app/content/learn'
+import { Node } from "@app/content/learn"
 import { hot } from "react-hot-loader";
 import MarkdownContent from "@app/components/MarkdownContent";
 

@@ -1,11 +1,11 @@
-import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
-import MenuIcon from '@material-ui/icons/Menu';
+import React from "react";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import IconButton from "@material-ui/core/IconButton";
+import Typography from "@material-ui/core/Typography";
+import MenuItem from "@material-ui/core/MenuItem";
+import Menu from "@material-ui/core/Menu";
+import MenuIcon from "@material-ui/icons/Menu";
 import { Link } from "react-static";
 import styled from "styled-components";
 import theme from "@app/components/theme";
@@ -21,14 +21,14 @@ const MiddleSpace = styled.div`
 
 const MobileSection = styled.div`
   display: flex;
-  ${theme.breakpoints.up('md')} {
+  ${theme.breakpoints.up("md")} {
     display: none;
   }
 `;
 
 const DesktopSection = styled.div`
   display: none;
-  ${theme.breakpoints.up('md')} {
+  ${theme.breakpoints.up("md")} {
     display: flex;
   }
 `;
@@ -61,8 +61,8 @@ class Navbar extends React.Component {
         const renderMobileMenu = (
             <Menu
                 anchorEl={mobileMoreAnchorEl}
-                anchorOrigin={{vertical: 'top', horizontal: 'right'}}
-                transformOrigin={{vertical: 'top', horizontal: 'right'}}
+                anchorOrigin={{vertical: "top", horizontal: "right"}}
+                transformOrigin={{vertical: "top", horizontal: "right"}}
                 open={isMobileMenuOpen}
                 onClose={this.handleMobileMenuClose}
             >

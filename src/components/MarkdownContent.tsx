@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react"
 // @ts-ignore
-import convert from 'htmr'
+import convert from "htmr"
 // @ts-ignore
 import Prism from "prismjs";
 import "prismjs/themes/prism.css"
