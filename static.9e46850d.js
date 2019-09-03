@@ -67,10 +67,10 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "https://ninaolo.github.io/code-yay/";
+/******/ 	__webpack_require__.p = "https://codercatch.com/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 21);
+/******/ 	return __webpack_require__(__webpack_require__.s = 20);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -127,12 +127,6 @@ module.exports = require("styled-components");
 
 /***/ }),
 /* 5 */
-/***/ (function(module, exports) {
-
-module.exports = require("htmr");
-
-/***/ }),
-/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -146,7 +140,7 @@ var _react = __webpack_require__(0);
 
 var React = _interopRequireWildcard(_react);
 
-var _Button = __webpack_require__(33);
+var _Button = __webpack_require__(32);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -159,14 +153,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 var StyledButton = (0, _styledComponents2.default)(_Button2.default).withConfig({
-  displayName: 'Button__StyledButton',
-  componentId: 'sc-1g3in10-0'
-})(['&&{border-radius:', ';padding:', ';width:', ';text-transform:none;box-shadow:none;color:white;font-family:Lato;font-size:15px;}'], function (props) {
-  return props.round ? '1.5rem' : '0';
+  displayName: "Button__StyledButton",
+  componentId: "sc-1g3in10-0"
+})(["&&{border-radius:", ";padding:", ";width:", ";text-transform:none;box-shadow:none;color:white;font-family:Lato;font-size:15px;}"], function (props) {
+  return props.round ? "1.5rem" : "0";
 }, function (props) {
-  return props.box ? '3rem' : '.75rem 3rem';
+  return props.box ? "3rem" : ".75rem 3rem";
 }, function (props) {
-  return props.box ? '200px' : 'inherit';
+  return props.box ? "200px" : "inherit";
 });
 var Button = function Button(props) {
   return React.createElement(StyledButton, Object.assign({}, props));
@@ -174,13 +168,13 @@ var Button = function Button(props) {
 exports.default = Button;
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-router-dom");
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -297,41 +291,13 @@ var cacheProm = exports.cacheProm = function cacheProm(pr, chunkName, props, pro
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports) {
 
 module.exports = require("prop-types");
 
 /***/ }),
-/* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactStatic = __webpack_require__(2);
-
-var _htmr = __webpack_require__(5);
-
-var _htmr2 = _interopRequireDefault(_htmr);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
-    var reactStatic = _ref.reactStatic;
-    return _react2.default.createElement("div", null, _react2.default.createElement("section", null, (0, _htmr2.default)(reactStatic.contents)));
-});
-
-/***/ }),
-/* 11 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -347,7 +313,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(2);
 
-var _htmr = __webpack_require__(5);
+var _htmr = __webpack_require__(10);
 
 var _htmr2 = _interopRequireDefault(_htmr);
 
@@ -363,7 +329,13 @@ exports.default = (0, _reactHotLoader.hot)(module)(About);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 12 */
+/* 10 */
+/***/ (function(module, exports) {
+
+module.exports = require("htmr");
+
+/***/ }),
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -377,7 +349,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _LinkButtonList = __webpack_require__(32);
+var _LinkButtonList = __webpack_require__(31);
 
 var _LinkButtonList2 = _interopRequireDefault(_LinkButtonList);
 
@@ -394,7 +366,7 @@ exports.default = (0, _reactStatic.withRouteData)(function (data) {
 });
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -409,9 +381,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(7);
+var _reactRouterDom = __webpack_require__(6);
 
-var _Button = __webpack_require__(6);
+var _Button = __webpack_require__(5);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -425,7 +397,7 @@ var LinkButton = exports.LinkButton = function LinkButton(props) {
 };
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -443,7 +415,7 @@ var _reactStatic = __webpack_require__(2);
 
 var _reactHotLoader = __webpack_require__(3);
 
-var _MarkdownContent = __webpack_require__(15);
+var _MarkdownContent = __webpack_require__(14);
 
 var _MarkdownContent2 = _interopRequireDefault(_MarkdownContent);
 
@@ -470,7 +442,7 @@ var LearnNode = (0, _reactStatic.withRouteData)(function (learnNode) {
     };
     var getProsCons = function getProsCons() {
         if (node.content && node.content.pros && node.content.cons) {
-            return _react2.default.createElement("div", null, _react2.default.createElement("h3", null, "Pros/cons"), _react2.default.createElement("ul", null, _react2.default.createElement("li", null, "Pros:", node.content.pros), _react2.default.createElement("li", null, "Cons:", node.content.cons)));
+            return _react2.default.createElement("div", null, _react2.default.createElement("h3", null, "Pros/cons"), _react2.default.createElement("ul", null, _react2.default.createElement("li", null, "Pros: ", node.content.pros), _react2.default.createElement("li", null, "Cons: ", node.content.cons)));
         }
         return "";
     };
@@ -492,7 +464,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(LearnNode);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -508,23 +480,23 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _htmr = __webpack_require__(5);
+var _htmr = __webpack_require__(10);
 
 var _htmr2 = _interopRequireDefault(_htmr);
 
-var _prismjs = __webpack_require__(34);
+var _prismjs = __webpack_require__(33);
 
 var _prismjs2 = _interopRequireDefault(_prismjs);
 
-__webpack_require__(35);
+__webpack_require__(34);
 
 var _styledComponents = __webpack_require__(4);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-__webpack_require__(36);
+__webpack_require__(35);
 
-__webpack_require__(37);
+__webpack_require__(36);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -539,9 +511,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 var StyledMarkdownContent = _styledComponents2.default.div.withConfig({
-    displayName: 'MarkdownContent__StyledMarkdownContent',
-    componentId: 'sc-1cke1eq-0'
-})(['&& pre{background:#f4f4f4;font-size:13px;padding:.8em;overflow:auto;border-radius:7px;}']);
+    displayName: "MarkdownContent__StyledMarkdownContent",
+    componentId: "sc-1cke1eq-0"
+})(["&& pre{background:#f4f4f4;font-size:13px;padding:.8em;overflow:auto;border-radius:7px;}"]);
 
 var MarkdownContent = function (_React$Component) {
     _inherits(MarkdownContent, _React$Component);
@@ -553,12 +525,12 @@ var MarkdownContent = function (_React$Component) {
     }
 
     _createClass(MarkdownContent, [{
-        key: 'componentDidMount',
+        key: "componentDidMount",
         value: function componentDidMount() {
             _prismjs2.default.highlightAll();
         }
     }, {
-        key: 'render',
+        key: "render",
         value: function render() {
             return _react2.default.createElement(StyledMarkdownContent, null, (0, _htmr2.default)(this.props.content));
         }
@@ -570,7 +542,7 @@ var MarkdownContent = function (_React$Component) {
 exports.default = MarkdownContent;
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -590,7 +562,7 @@ var _styledComponents = __webpack_require__(4);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _LinkButton = __webpack_require__(13);
+var _LinkButton = __webpack_require__(12);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -605,7 +577,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(InterviewPrep);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -628,21 +600,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var prettyDate = function prettyDate(date) {
     date = new Date(date);
     var month = date.getMonth() + 1;
-    return date.getFullYear() + '-' + month.toString().padStart(2, "0") + '-' + date.getDate();
+    return date.getFullYear() + "-" + month.toString().padStart(2, "0") + "-" + date.getDate();
 };
 var Blog = (0, _reactStatic.withRouteData)(function (_ref) {
     var posts = _ref.posts;
-    return _react2.default.createElement("div", null, _react2.default.createElement("h1", null, "It's blog time."), _react2.default.createElement("br", null), "All Posts:", _react2.default.createElement("ul", null, posts.sort(function (a, b) {
+    return _react2.default.createElement("div", null, _react2.default.createElement("h1", null, "It\"s blog time."), _react2.default.createElement("br", null), "All Posts:", _react2.default.createElement("ul", null, posts.sort(function (a, b) {
         return new Date(b.date) - new Date(a.date);
     }).map(function (post) {
-        return _react2.default.createElement("li", { key: post.slug }, prettyDate(post.date), ": ", _react2.default.createElement(_reactStatic.Link, { to: '/blog/post/' + post.slug + '/' }, post.title));
+        return _react2.default.createElement("li", { key: post.slug }, prettyDate(post.date), ": ", _react2.default.createElement(_reactStatic.Link, { to: "/blog/post/" + post.slug + "/" }, post.title));
     })));
 });
 exports.default = (0, _reactHotLoader.hot)(module)(Blog);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -658,7 +630,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactStatic = __webpack_require__(2);
 
-var _MarkdownContent = __webpack_require__(15);
+var _MarkdownContent = __webpack_require__(14);
 
 var _MarkdownContent2 = _interopRequireDefault(_MarkdownContent);
 
@@ -666,11 +638,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = (0, _reactStatic.withRouteData)(function (_ref) {
     var post = _ref.post;
-    return _react2.default.createElement("div", null, _react2.default.createElement(_reactStatic.Link, { to: "/blog/" }, '<', " Back"), _react2.default.createElement("br", null), _react2.default.createElement("h1", null, post.title), _react2.default.createElement(_MarkdownContent2.default, { content: post.contents }));
+    return _react2.default.createElement("div", null, _react2.default.createElement(_reactStatic.Link, { to: "/blog/" }, "<", " Back"), _react2.default.createElement("br", null), _react2.default.createElement("h1", null, post.title), _react2.default.createElement(_MarkdownContent2.default, { content: post.contents }));
 });
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -680,9 +652,9 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _styles = __webpack_require__(38);
+var _styles = __webpack_require__(37);
 
-var _colors = __webpack_require__(20);
+var _colors = __webpack_require__(19);
 
 var _colors2 = _interopRequireDefault(_colors);
 
@@ -697,7 +669,7 @@ var theme = (0, _styles.createMuiTheme)({
 exports.default = theme;
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -755,7 +727,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(colors);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -769,11 +741,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(22);
+var _reactDom = __webpack_require__(21);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _App = __webpack_require__(23);
+var _App = __webpack_require__(22);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -785,23 +757,23 @@ exports.default = _App2.default;
 
 // Your top level component
 
-if (typeof document !== 'undefined') {
+if (typeof document !== "undefined") {
     var renderMethod =  false ? _reactDom2.default.render : _reactDom2.default.hydrate || _reactDom2.default.render;
     var render = function render(Comp) {
-        renderMethod(_react2.default.createElement(Comp, null), document.getElementById('root'));
+        renderMethod(_react2.default.createElement(Comp, null), document.getElementById("root"));
     };
     // Render!
     render(_App2.default);
 }
 
 /***/ }),
-/* 22 */
+/* 21 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom");
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -811,7 +783,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  body {\n    font-family: Lato;\n    font-weight: 400;\n    letter-spacing: 0.3px;\n    line-height: 1.5;\n    font-size: 15px;\n    margin: 0;\n    padding: 0;\n    color: ', '\n  }\n'], ['\n  body {\n    font-family: Lato;\n    font-weight: 400;\n    letter-spacing: 0.3px;\n    line-height: 1.5;\n    font-size: 15px;\n    margin: 0;\n    padding: 0;\n    color: ', '\n  }\n']);
+var _templateObject = _taggedTemplateLiteral(["\n  body {\n    font-family: Lato;\n    font-weight: 400;\n    letter-spacing: 0.3px;\n    line-height: 1.5;\n    font-size: 15px;\n    margin: 0;\n    padding: 0;\n    color: ", "\n  }\n"], ["\n  body {\n    font-family: Lato;\n    font-weight: 400;\n    letter-spacing: 0.3px;\n    line-height: 1.5;\n    font-size: 15px;\n    margin: 0;\n    padding: 0;\n    color: ", "\n  }\n"]);
 
 var _react = __webpack_require__(0);
 
@@ -825,23 +797,23 @@ var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 var _reactHotLoader = __webpack_require__(3);
 
-var _reactStaticRoutes = __webpack_require__(24);
+var _reactStaticRoutes = __webpack_require__(23);
 
 var _reactStaticRoutes2 = _interopRequireDefault(_reactStaticRoutes);
 
-var _theme = __webpack_require__(19);
+var _theme = __webpack_require__(18);
 
 var _theme2 = _interopRequireDefault(_theme);
 
-var _MuiThemeProvider = __webpack_require__(39);
+var _MuiThemeProvider = __webpack_require__(38);
 
 var _MuiThemeProvider2 = _interopRequireDefault(_MuiThemeProvider);
 
-var _Navbar = __webpack_require__(40);
+var _Navbar = __webpack_require__(39);
 
 var _Navbar2 = _interopRequireDefault(_Navbar);
 
-var _components = __webpack_require__(48);
+var _components = __webpack_require__(47);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -849,17 +821,17 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 (0, _styledComponents.injectGlobal)(_templateObject, _components.colors.darkGrey);
 var AppStyles = _styledComponents2.default.div.withConfig({
-  displayName: 'App__AppStyles',
-  componentId: 'nie0ws-0'
-})(['a{text-decoration:none;color:#704f56;font-weight:bold;}img{max-width:100%;}h1,h2,h3,h4,h5{color:', ';}'], _components.colors.black);
+  displayName: "App__AppStyles",
+  componentId: "nie0ws-0"
+})(["a{text-decoration:none;color:#704f56;font-weight:bold;}img{max-width:100%;}h1,h2,h3,h4,h5{color:", ";}"], _components.colors.black);
 var StyledNavbar = _styledComponents2.default.div.withConfig({
-  displayName: 'App__StyledNavbar',
-  componentId: 'nie0ws-1'
-})(['a,span{color:white;font-family:Lato;}']);
+  displayName: "App__StyledNavbar",
+  componentId: "nie0ws-1"
+})(["a,span{color:white;font-family:Lato;}"]);
 var MainContent = _styledComponents2.default.div.withConfig({
-  displayName: 'App__MainContent',
-  componentId: 'nie0ws-2'
-})(['padding:3% 5%;p > code{background:', ';padding:.1em .5em;border-radius:.3em;white-space:normal;font-family:Lato;letter-spacing:0.8px;}'], _components.colors.lightGrey);
+  displayName: "App__MainContent",
+  componentId: "nie0ws-2"
+})(["padding:3% 5%;p > code{background:", ";padding:.1em .5em;border-radius:.3em;white-space:normal;font-family:Lato;letter-spacing:0.8px;}"], _components.colors.lightGrey);
 var App = function App() {
   return _react2.default.createElement(_reactStatic.Router, null, _react2.default.createElement(_MuiThemeProvider2.default, { theme: _theme2.default }, _react2.default.createElement(AppStyles, null, _react2.default.createElement(StyledNavbar, null, _react2.default.createElement(_Navbar2.default, null)), _react2.default.createElement(MainContent, null, _react2.default.createElement(_reactStaticRoutes2.default, null)))));
 };
@@ -867,7 +839,7 @@ exports.default = (0, _reactHotLoader.hot)(module)(App);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -877,15 +849,15 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _path2 = __webpack_require__(25);
+var _path2 = __webpack_require__(24);
 
 var _path3 = _interopRequireDefault(_path2);
 
-var _importCss2 = __webpack_require__(26);
+var _importCss2 = __webpack_require__(25);
 
 var _importCss3 = _interopRequireDefault(_importCss2);
 
-var _universalImport2 = __webpack_require__(27);
+var _universalImport2 = __webpack_require__(26);
 
 var _universalImport3 = _interopRequireDefault(_universalImport2);
 
@@ -897,9 +869,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(7);
+var _reactRouterDom = __webpack_require__(6);
 
-var _reactUniversalComponent = __webpack_require__(28);
+var _reactUniversalComponent = __webpack_require__(27);
 
 var _reactUniversalComponent2 = _interopRequireDefault(_reactUniversalComponent);
 
@@ -924,30 +896,10 @@ var universalOptions = {
     }
 };
 var t_0 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
-    id: '../src/containers/Home',
-    file: '/Users/Nina/git/code-yay/dist/react-static-routes.js',
-    load: function load() {
-        return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 10)), (0, _importCss3.default)('src/containers/Home', {
-            disableWarnings: true
-        })]).then(function (proms) {
-            return proms[0];
-        });
-    },
-    path: function path() {
-        return _path3.default.join(__dirname, '../src/containers/Home');
-    },
-    resolve: function resolve() {
-        return /*require.resolve*/(10);
-    },
-    chunkName: function chunkName() {
-        return 'src/containers/Home';
-    }
-}), universalOptions);
-var t_1 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
     id: '../src/containers/About',
     file: '/Users/Nina/git/code-yay/dist/react-static-routes.js',
     load: function load() {
-        return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 11)), (0, _importCss3.default)('src/containers/About', {
+        return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 9)), (0, _importCss3.default)('src/containers/About', {
             disableWarnings: true
         })]).then(function (proms) {
             return proms[0];
@@ -957,17 +909,17 @@ var t_1 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
         return _path3.default.join(__dirname, '../src/containers/About');
     },
     resolve: function resolve() {
-        return /*require.resolve*/(11);
+        return /*require.resolve*/(9);
     },
     chunkName: function chunkName() {
         return 'src/containers/About';
     }
 }), universalOptions);
-var t_2 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
+var t_1 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
     id: '../src/containers/Learn',
     file: '/Users/Nina/git/code-yay/dist/react-static-routes.js',
     load: function load() {
-        return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 12)), (0, _importCss3.default)('src/containers/Learn', {
+        return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 11)), (0, _importCss3.default)('src/containers/Learn', {
             disableWarnings: true
         })]).then(function (proms) {
             return proms[0];
@@ -977,17 +929,17 @@ var t_2 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
         return _path3.default.join(__dirname, '../src/containers/Learn');
     },
     resolve: function resolve() {
-        return /*require.resolve*/(12);
+        return /*require.resolve*/(11);
     },
     chunkName: function chunkName() {
         return 'src/containers/Learn';
     }
 }), universalOptions);
-var t_3 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
+var t_2 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
     id: '../src/components/LearnNode',
     file: '/Users/Nina/git/code-yay/dist/react-static-routes.js',
     load: function load() {
-        return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 14)), (0, _importCss3.default)('src/components/LearnNode', {
+        return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 13)), (0, _importCss3.default)('src/components/LearnNode', {
             disableWarnings: true
         })]).then(function (proms) {
             return proms[0];
@@ -997,17 +949,17 @@ var t_3 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
         return _path3.default.join(__dirname, '../src/components/LearnNode');
     },
     resolve: function resolve() {
-        return /*require.resolve*/(14);
+        return /*require.resolve*/(13);
     },
     chunkName: function chunkName() {
         return 'src/components/LearnNode';
     }
 }), universalOptions);
-var t_4 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
+var t_3 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
     id: '../src/containers/InterviewPrep',
     file: '/Users/Nina/git/code-yay/dist/react-static-routes.js',
     load: function load() {
-        return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 16)), (0, _importCss3.default)('src/containers/InterviewPrep', {
+        return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 15)), (0, _importCss3.default)('src/containers/InterviewPrep', {
             disableWarnings: true
         })]).then(function (proms) {
             return proms[0];
@@ -1017,17 +969,17 @@ var t_4 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
         return _path3.default.join(__dirname, '../src/containers/InterviewPrep');
     },
     resolve: function resolve() {
-        return /*require.resolve*/(16);
+        return /*require.resolve*/(15);
     },
     chunkName: function chunkName() {
         return 'src/containers/InterviewPrep';
     }
 }), universalOptions);
-var t_5 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
+var t_4 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
     id: '../src/containers/Blog',
     file: '/Users/Nina/git/code-yay/dist/react-static-routes.js',
     load: function load() {
-        return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 17)), (0, _importCss3.default)('src/containers/Blog', {
+        return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 16)), (0, _importCss3.default)('src/containers/Blog', {
             disableWarnings: true
         })]).then(function (proms) {
             return proms[0];
@@ -1037,17 +989,17 @@ var t_5 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
         return _path3.default.join(__dirname, '../src/containers/Blog');
     },
     resolve: function resolve() {
-        return /*require.resolve*/(17);
+        return /*require.resolve*/(16);
     },
     chunkName: function chunkName() {
         return 'src/containers/Blog';
     }
 }), universalOptions);
-var t_6 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
+var t_5 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)({
     id: '../src/containers/Post',
     file: '/Users/Nina/git/code-yay/dist/react-static-routes.js',
     load: function load() {
-        return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 18)), (0, _importCss3.default)('src/containers/Post', {
+        return Promise.all([new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 17)), (0, _importCss3.default)('src/containers/Post', {
             disableWarnings: true
         })]).then(function (proms) {
             return proms[0];
@@ -1057,14 +1009,14 @@ var t_6 = (0, _reactUniversalComponent2.default)((0, _universalImport3.default)(
         return _path3.default.join(__dirname, '../src/containers/Post');
     },
     resolve: function resolve() {
-        return /*require.resolve*/(18);
+        return /*require.resolve*/(17);
     },
     chunkName: function chunkName() {
         return 'src/containers/Post';
     }
 }), universalOptions);
 // Template Map
-global.componentsByTemplateID = global.componentsByTemplateID || [t_0, t_1, t_2, t_3, t_4, t_5, t_6];
+global.componentsByTemplateID = global.componentsByTemplateID || [t_0, t_1, t_2, t_3, t_4, t_5];
 // Template Tree
 global.templateIDsByPath = global.templateIDsByPath || {
     '404': undefined
@@ -1136,25 +1088,25 @@ exports.default = Routes;
 /* WEBPACK VAR INJECTION */}.call(exports, "/"))
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, exports) {
 
 module.exports = require("path");
 
 /***/ }),
-/* 26 */
+/* 25 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-plugin-universal-import/importCss");
 
 /***/ }),
-/* 27 */
+/* 26 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-plugin-universal-import/universalImport");
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1169,7 +1121,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _requireUniversalModule = __webpack_require__(29);
+var _requireUniversalModule = __webpack_require__(28);
 
 Object.defineProperty(exports, 'CHUNK_NAMES', {
   enumerable: true,
@@ -1184,7 +1136,7 @@ Object.defineProperty(exports, 'MODULE_IDS', {
   }
 });
 
-var _reportChunks = __webpack_require__(30);
+var _reportChunks = __webpack_require__(29);
 
 Object.defineProperty(exports, 'ReportChunks', {
   enumerable: true,
@@ -1197,17 +1149,17 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(9);
+var _propTypes = __webpack_require__(8);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _hoistNonReactStatics = __webpack_require__(31);
+var _hoistNonReactStatics = __webpack_require__(30);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
 var _requireUniversalModule2 = _interopRequireDefault(_requireUniversalModule);
 
-var _utils = __webpack_require__(8);
+var _utils = __webpack_require__(7);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1501,7 +1453,7 @@ exports.default = universal;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1513,7 +1465,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.clearChunks = exports.flushModuleIds = exports.flushChunkNames = exports.MODULE_IDS = exports.CHUNK_NAMES = undefined;
 exports.default = requireUniversalModule;
 
-var _utils = __webpack_require__(8);
+var _utils = __webpack_require__(7);
 
 var CHUNK_NAMES = exports.CHUNK_NAMES = new Set();
 var MODULE_IDS = exports.MODULE_IDS = new Set();
@@ -1683,7 +1635,7 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 };
 
 /***/ }),
-/* 30 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1699,7 +1651,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(9);
+var _propTypes = __webpack_require__(8);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -1746,13 +1698,13 @@ ReportChunks.childContextTypes = {
 exports.default = ReportChunks;
 
 /***/ }),
-/* 31 */
+/* 30 */
 /***/ (function(module, exports) {
 
 module.exports = require("hoist-non-react-statics");
 
 /***/ }),
-/* 32 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1768,7 +1720,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Button = __webpack_require__(6);
+var _Button = __webpack_require__(5);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -1776,7 +1728,7 @@ var _styledComponents = __webpack_require__(4);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _LinkButton = __webpack_require__(13);
+var _LinkButton = __webpack_require__(12);
 
 var _reactHotLoader = __webpack_require__(3);
 
@@ -1825,49 +1777,49 @@ exports.default = (0, _reactHotLoader.hot)(module)(LinkButtonList);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 33 */
+/* 32 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Button");
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports) {
 
 module.exports = require("prismjs");
 
 /***/ }),
-/* 35 */
+/* 34 */
 /***/ (function(module, exports) {
 
 module.exports = require("prismjs/themes/prism.css");
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports) {
 
 module.exports = require("prismjs/components/prism-java");
 
 /***/ }),
-/* 37 */
+/* 36 */
 /***/ (function(module, exports) {
 
 module.exports = require("prismjs/components/prism-bash");
 
 /***/ }),
-/* 38 */
+/* 37 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/styles");
 
 /***/ }),
-/* 39 */
+/* 38 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/styles/MuiThemeProvider");
 
 /***/ }),
-/* 40 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1883,31 +1835,31 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _AppBar = __webpack_require__(41);
+var _AppBar = __webpack_require__(40);
 
 var _AppBar2 = _interopRequireDefault(_AppBar);
 
-var _Toolbar = __webpack_require__(42);
+var _Toolbar = __webpack_require__(41);
 
 var _Toolbar2 = _interopRequireDefault(_Toolbar);
 
-var _IconButton = __webpack_require__(43);
+var _IconButton = __webpack_require__(42);
 
 var _IconButton2 = _interopRequireDefault(_IconButton);
 
-var _Typography = __webpack_require__(44);
+var _Typography = __webpack_require__(43);
 
 var _Typography2 = _interopRequireDefault(_Typography);
 
-var _MenuItem = __webpack_require__(45);
+var _MenuItem = __webpack_require__(44);
 
 var _MenuItem2 = _interopRequireDefault(_MenuItem);
 
-var _Menu = __webpack_require__(46);
+var _Menu = __webpack_require__(45);
 
 var _Menu2 = _interopRequireDefault(_Menu);
 
-var _Menu3 = __webpack_require__(47);
+var _Menu3 = __webpack_require__(46);
 
 var _Menu4 = _interopRequireDefault(_Menu3);
 
@@ -1917,7 +1869,7 @@ var _styledComponents = __webpack_require__(4);
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _theme = __webpack_require__(19);
+var _theme = __webpack_require__(18);
 
 var _theme2 = _interopRequireDefault(_theme);
 
@@ -1932,21 +1884,21 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var StyledNavbar = _styledComponents2.default.div.withConfig({
-    displayName: 'Navbar__StyledNavbar',
-    componentId: 'bn5y01-0'
-})(['width:100%;']);
+    displayName: "Navbar__StyledNavbar",
+    componentId: "bn5y01-0"
+})(["width:100%;"]);
 var MiddleSpace = _styledComponents2.default.div.withConfig({
-    displayName: 'Navbar__MiddleSpace',
-    componentId: 'bn5y01-1'
-})(['flex-grow:1;']);
+    displayName: "Navbar__MiddleSpace",
+    componentId: "bn5y01-1"
+})(["flex-grow:1;"]);
 var MobileSection = _styledComponents2.default.div.withConfig({
-    displayName: 'Navbar__MobileSection',
-    componentId: 'bn5y01-2'
-})(['display:flex;', '{display:none;}'], _theme2.default.breakpoints.up('md'));
+    displayName: "Navbar__MobileSection",
+    componentId: "bn5y01-2"
+})(["display:flex;", "{display:none;}"], _theme2.default.breakpoints.up("md"));
 var DesktopSection = _styledComponents2.default.div.withConfig({
-    displayName: 'Navbar__DesktopSection',
-    componentId: 'bn5y01-3'
-})(['display:none;', '{display:flex;}'], _theme2.default.breakpoints.up('md'));
+    displayName: "Navbar__DesktopSection",
+    componentId: "bn5y01-3"
+})(["display:none;", "{display:flex;}"], _theme2.default.breakpoints.up("md"));
 
 var Navbar = function (_React$Component) {
     _inherits(Navbar, _React$Component);
@@ -1970,19 +1922,19 @@ var Navbar = function (_React$Component) {
     }
 
     _createClass(Navbar, [{
-        key: 'render',
+        key: "render",
         value: function render() {
             var mobileMoreAnchorEl = this.state.mobileMoreAnchorEl;
 
             var isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-            var links = [_react2.default.createElement(_reactStatic.Link, { to: "/blog" }, "Blog"), _react2.default.createElement(_reactStatic.Link, { to: "/about" }, "About")];
+            var links = [_react2.default.createElement(_reactStatic.Link, { to: "/interview-prep" }, "Interview prep"), _react2.default.createElement(_reactStatic.Link, { to: "/blog" }, "Blog"), _react2.default.createElement(_reactStatic.Link, { to: "/about" }, "About")];
             var renderLinks = function renderLinks() {
                 return links.map(function (link) {
                     return _react2.default.createElement(_MenuItem2.default, null, link);
                 });
             };
-            var renderMobileMenu = _react2.default.createElement(_Menu2.default, { anchorEl: mobileMoreAnchorEl, anchorOrigin: { vertical: 'top', horizontal: 'right' }, transformOrigin: { vertical: 'top', horizontal: 'right' }, open: isMobileMenuOpen, onClose: this.handleMobileMenuClose }, renderLinks());
-            return _react2.default.createElement(StyledNavbar, null, _react2.default.createElement(_AppBar2.default, { position: "static" }, _react2.default.createElement(_Toolbar2.default, null, _react2.default.createElement(_Typography2.default, { variant: "title", color: "inherit", noWrap: true }, _react2.default.createElement(_reactStatic.Link, { exact: true, to: "/interview-prep" }, 'code \u2022 yay')), _react2.default.createElement(MiddleSpace, null), _react2.default.createElement(DesktopSection, null, renderLinks()), _react2.default.createElement(MobileSection, null, _react2.default.createElement(_IconButton2.default, { "aria-haspopup": "true", onClick: this.handleMobileMenuOpen, color: "inherit" }, _react2.default.createElement(_Menu4.default, null))))), renderMobileMenu);
+            var renderMobileMenu = _react2.default.createElement(_Menu2.default, { anchorEl: mobileMoreAnchorEl, anchorOrigin: { vertical: "top", horizontal: "right" }, transformOrigin: { vertical: "top", horizontal: "right" }, open: isMobileMenuOpen, onClose: this.handleMobileMenuClose }, renderLinks());
+            return _react2.default.createElement(StyledNavbar, null, _react2.default.createElement(_AppBar2.default, { position: "static" }, _react2.default.createElement(_Toolbar2.default, null, _react2.default.createElement(_Typography2.default, { variant: "title", color: "inherit", noWrap: true }, _react2.default.createElement(_reactStatic.Link, { exact: true, to: "/" }, "coder \u2022 catch")), _react2.default.createElement(MiddleSpace, null), _react2.default.createElement(DesktopSection, null, renderLinks()), _react2.default.createElement(MobileSection, null, _react2.default.createElement(_IconButton2.default, { "aria-haspopup": "true", onClick: this.handleMobileMenuOpen, color: "inherit" }, _react2.default.createElement(_Menu4.default, null))))), renderMobileMenu);
         }
     }]);
 
@@ -1993,49 +1945,49 @@ exports.default = (0, _reactHotLoader.hot)(module)(Navbar);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/AppBar");
 
 /***/ }),
-/* 42 */
+/* 41 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Toolbar");
 
 /***/ }),
-/* 43 */
+/* 42 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/IconButton");
 
 /***/ }),
-/* 44 */
+/* 43 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Typography");
 
 /***/ }),
-/* 45 */
+/* 44 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/MenuItem");
 
 /***/ }),
-/* 46 */
+/* 45 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Menu");
 
 /***/ }),
-/* 47 */
+/* 46 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/icons/Menu");
 
 /***/ }),
-/* 48 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2045,18 +1997,18 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _colors = __webpack_require__(20);
+var _colors = __webpack_require__(19);
 
-Object.defineProperty(exports, 'colors', {
+Object.defineProperty(exports, "colors", {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_colors).default;
   }
 });
 
-var _Button = __webpack_require__(6);
+var _Button = __webpack_require__(5);
 
-Object.defineProperty(exports, 'Button', {
+Object.defineProperty(exports, "Button", {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_Button).default;
@@ -2068,4 +2020,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.2e932f5c.js.map
+//# sourceMappingURL=static.9e46850d.js.map
