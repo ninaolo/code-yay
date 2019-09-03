@@ -2,7 +2,7 @@
   "name": "react-static-example-basic",
   "version": "1.0.1",
   "main": "index.js",
-  "homepage": "https://ninaolo.github.io/code-yay",
+  "homepage": "https://codercatch.com",
   "license": "MIT",
   "scripts": {
     "start": "react-static start",

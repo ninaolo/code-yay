@@ -29,8 +29,7 @@ const getRoutesFromNode = (node, path, learnPostsBySlug) => {
 }
 
 export default {
-    siteRoot: 'https://ninaolo.github.io',
-    basePath: 'code-yay',
+    siteRoot: 'https://codercatch.com',
     entry: path.join(__dirname, 'src', 'index.tsx'),
 
     getSiteData: () => ({
