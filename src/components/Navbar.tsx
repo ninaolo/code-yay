@@ -52,6 +52,7 @@ class Navbar extends React.Component {
         const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
         const links = [
+            <Link to="/interview-prep">Interview prep</Link>,
             <Link to="/blog">Blog</Link>,
             <Link to="/about">About</Link>,
         ];
