@@ -65,6 +65,10 @@ export default {
                 component: 'src/containers/InterviewPrep',
             },
             {
+                path: '/interview-prep',
+                component: 'src/containers/InterviewPrep',
+            },
+            {
                 path: '/blog',
                 component: 'src/containers/Blog',
                 getData: () => ({
