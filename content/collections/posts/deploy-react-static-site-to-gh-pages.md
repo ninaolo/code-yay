@@ -52,7 +52,7 @@ relative path issue).
 <img src="/deploy-react-static-site-to-gh-pages-1.png" height="200px" title="Not working"/>
 
 ### Step 4: Fix routing issue
-The solution is to add the following to your `static.config.js` file in the root directory:
+The solution is to add the following to your `static.config.jsx` file in the root directory:
 
 ```
 export default {
