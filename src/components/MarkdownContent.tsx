@@ -22,7 +22,7 @@ const StyledMarkdownContent = styled.div`
   }
 `;
 
-export default class MarkdownContent extends React.Component<Props, {}> {
+class MarkdownContent extends React.Component<Props, {}> {
 
     componentDidMount() {
         Prism.highlightAll();
@@ -37,3 +37,5 @@ export default class MarkdownContent extends React.Component<Props, {}> {
     }
 
 }
+
+export default MarkdownContent;

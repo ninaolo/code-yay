@@ -1,5 +1,3 @@
-import { hot } from "react-hot-loader";
-
 const Green = {
     50: "#39ae7f",
     100: "#39ae7f",
@@ -45,4 +43,4 @@ const colors = {
     black: "#1e1e1e"
 };
 
-export default hot(module)(colors)
+export default colors;

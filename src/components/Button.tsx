@@ -21,7 +21,7 @@ const StyledButton = styled(MuiButton) <AppButtonProps>`
   }
 `;
 
-const Button: React.SFC<AppButtonProps> = props => (
+const Button: React.FunctionComponent<AppButtonProps> = props => (
     <StyledButton {...props} />
 );
 

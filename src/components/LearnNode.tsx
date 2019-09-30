@@ -1,16 +1,15 @@
 import React from "react";
-import { withRouteData } from "react-static";
+import {useRouteData} from "react-static";
 // @ts-ignore
-import { Node } from "@app/content/learn";
-import { hot } from "react-hot-loader";
+import {Node} from "content/learn";
 import MarkdownContent from "@app/components/MarkdownContent";
 
 interface LearnNode {
     node: Node
 }
 
-const LearnNode = withRouteData((learnNode: LearnNode) => {
-    const node = learnNode.node;
+export default function LearnNode() {
+    const {node} = useRouteData();
 
     if (!node.content) {
         return "Oops! No information found here.";
@@ -97,6 +96,4 @@ const LearnNode = withRouteData((learnNode: LearnNode) => {
             {getImplementation()}
         </div>
     );
-});
-
-export default hot(module)(LearnNode);
+}

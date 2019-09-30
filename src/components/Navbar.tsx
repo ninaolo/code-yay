@@ -2,14 +2,12 @@ import React from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
-import Typography from "@material-ui/core/Typography";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import MenuIcon from "@material-ui/icons/Menu";
-import { Link } from "react-static";
+import { Link } from "@app/components/Router"
 import styled from "styled-components";
 import theme from "@app/components/theme";
-import { hot } from "react-hot-loader";
 
 const StyledNavbar = styled.div`
   width: 100%;
@@ -33,7 +31,7 @@ const DesktopSection = styled.div`
   }
 `;
 
-class Navbar extends React.Component {
+export default class Navbar extends React.Component {
     state = {
         anchorEl: null,
         mobileMoreAnchorEl: null,
@@ -75,10 +73,7 @@ class Navbar extends React.Component {
             <StyledNavbar>
                 <AppBar position="static">
                     <Toolbar>
-                        <Typography variant="title" color="inherit" noWrap>
-                            <Link exact to="/">coder &bull; catch</Link>
-                        </Typography>
-
+                        <Link exact to="/">coder &bull; catch</Link>
                         <MiddleSpace/>
 
                         <DesktopSection>
@@ -97,5 +92,3 @@ class Navbar extends React.Component {
         );
     }
 }
-
-export default hot(module)(Navbar);

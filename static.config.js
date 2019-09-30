@@ -1,16 +1,6 @@
-import React from 'react'
-import { reloadRoutes } from 'react-static/node'
-import jdown from 'jdown'
-import chokidar from 'chokidar'
-import { ServerStyleSheet } from 'styled-components'
 import path from 'path'
+import jdown from 'jdown'
 import { learnTree } from './src/content/tree'
-
-// Paths Aliases defined through tsconfig.json
-const typescriptWebpackPaths = require('./webpack.config.js')
-
-chokidar.watch('content').on('all', () => reloadRoutes())
-chokidar.watch('src/content').on('all', () => reloadRoutes())
 
 const getRoutesFromNode = (node, path, learnPostsBySlug) => {
     node.fullPath = node.slug ? `${path}/${node.slug}` : `${path}/${node.route}`
@@ -20,41 +10,41 @@ const getRoutesFromNode = (node, path, learnPostsBySlug) => {
 
     return {
         path: node.slug ? `/${node.slug}` : `/${node.route}`,
-        component: node.slug ? 'src/components/LearnNode' : 'src/containers/Learn',
+        template: node.slug ? 'src/components/LearnNode.tsx' : 'src/containers/Learn.tsx',
         getData: () => ({
             node,
         }),
         children: node.children ? node.children.map(child => getRoutesFromNode(child, node.fullPath, learnPostsBySlug)) : []
     }
-}
+};
 
 export default {
     siteRoot: 'https://codercatch.com',
-    entry: path.join(__dirname, 'src', 'index.tsx'),
+    entry: path.join(__dirname, 'src', 'index.js'),
 
     getSiteData: () => ({
         title: 'code-yay',
     }),
 
     getRoutes: async () => {
-        const { posts, home, about, learn } = await jdown('content')
+        const { posts, about, learn } = await jdown('content');
 
         const learnPostsBySlug = learn.reduce((map, post) => {
-            map[post.slug] = post
+            map[post.slug] = post;
             return map
-        }, {})
+        }, {});
 
         return [
             {
                 path: '/about',
-                component: 'src/containers/About',
+                template: 'src/containers/About.tsx',
                 getData: () => ({
                     about,
                 }),
             },
             {
                 path: '/learn',
-                component: 'src/containers/Learn',
+                template: 'src/containers/Learn.tsx',
                 getData: () => ({
                     node: learnTree,
                 }),
@@ -62,87 +52,37 @@ export default {
             },
             {
                 path: '/',
-                component: 'src/containers/InterviewPrep',
+                template: 'src/containers/InterviewPrep.tsx',
             },
             {
                 path: '/interview-prep',
-                component: 'src/containers/InterviewPrep',
+                template: 'src/containers/InterviewPrep.tsx',
             },
             {
                 path: '/blog',
-                component: 'src/containers/Blog',
+                template: 'src/containers/Blog.tsx',
                 getData: () => ({
                     posts,
                 }),
                 children: posts.map(post => ({
                     path: `/post/${post.slug}`,
-                    component: 'src/containers/Post',
+                    template: 'src/containers/Post.tsx',
                     getData: () => ({
                         post,
                     }),
                 })),
-            }
-        ]
-    },
-
-    renderToHtml: (render, Comp, meta) => {
-        const sheet = new ServerStyleSheet()
-        const html = render(sheet.collectStyles(<Comp/>))
-        meta.styleTags = sheet.getStyleElement()
-        return html
-    },
-
-    Document: class CustomHtml extends React.Component {
-        render () {
-            const {
-                Html, Head, Body, children, renderMeta,
-            } = this.props
-
-            return (
-                <Html>
-                <Head>
-                    <meta charSet="UTF-8"/>
-                    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                    {renderMeta.styleTags}
-                </Head>
-                <Body>{children}</Body>
-                </Html>
-            )
-        }
-    },
-    webpack: (config, { defaultLoaders }) => {
-        // Add .ts and .tsx extension to resolver
-        config.resolve.extensions.push('.ts', '.tsx')
-
-        // Add TypeScript Path Mappings (from tsconfig via webpack.config.js)
-        // to react-statics alias resolution
-        config.resolve.alias = typescriptWebpackPaths.resolve.alias
-
-        // We replace the existing JS rule with one, that allows us to use
-        // both TypeScript and JavaScript interchangeably
-        config.module.rules = [
-            {
-                oneOf: [
-                    {
-                        test: /\.(js|jsx|ts|tsx)$/,
-                        exclude: defaultLoaders.jsLoader.exclude, // as std jsLoader exclude
-                        use: [
-                            {
-                                loader: 'babel-loader',
-                            },
-                            {
-                                loader: require.resolve('ts-loader'),
-                                options: {
-                                    transpileOnly: true,
-                                },
-                            },
-                        ],
-                    },
-                    defaultLoaders.cssLoader,
-                    defaultLoaders.fileLoader,
-                ],
             },
         ]
-        return config
     },
+    plugins: [
+        [
+            require.resolve('react-static-plugin-source-filesystem'),
+            {
+                location: path.resolve('./src/pages'),
+            },
+        ],
+        require.resolve('react-static-plugin-reach-router'),
+        require.resolve('react-static-plugin-sitemap'),
+        require.resolve('react-static-plugin-typescript'),
+    ],
 }
